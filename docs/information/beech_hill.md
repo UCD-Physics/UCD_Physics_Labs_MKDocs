@@ -9,22 +9,30 @@ date: 2025-05-21
 
 # Beech Hill
 
-The UCD School of Physics has relocated to the L.M.I. Building in Beech Hill from September 2023 whilst the Science Phase III upgrade is in progress. This building is just beyond the edge of campus, less than 200 m from UCD Nexus.
+The UCD School of Physics has relocated to the L.M.I. Building in
+Beech Hill from September 2023 whilst the Science Phase III upgrade is
+in progress.
 
-The Stage 3 and Stage 4 Advanced Laboratories are now located in the L.M.I Building, Beech Hill, on the ground and first floors of the B wing.
+This building is just beyond the edge of campus, less
+than 200 m from UCD Nexus.
+
+The Stage 3 and Stage 4 Advanced Laboratories are now located in the
+L.M.I Building, Beech Hill, on the ground and first floors of the B
+wing.
 
 ![Beech_Hill_Building](../imgs/Beech_Hill_LMI_hu15324191891119139970.webp)
-
+/// caption
 L.M.I. Building Beech Hill
+///
 
 ## Address
 
 The full address of the School of Physics in Beech Hill is:
 
-UCD School of Physics
-L.M.I. Main Building
-Beech Hill Road
-Dublin 4
+UCD School of Physics<br>
+L.M.I. Main Building<br>
+Beech Hill Road<br>
+Dublin 4<br>
 D04 P7W1
 
 ## Building location on Google Maps

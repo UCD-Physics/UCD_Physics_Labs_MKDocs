@@ -13,7 +13,7 @@ Introduction and Reference Documentaion for Computerised Data Acquisition in Pyt
 
 ## Introduction
 
-In the APL many experiments have computer-based data acquisition systems and some also require the experiment to be controlled by a computer. The main work horse is the National Instruments multi-function USB-6008 module, but a few other systems are also in use. This page is to provide a basic introduction to data acquisition techniques and to provide information on how to communicate with the data acquisition hardware through Python.
+In the APL many experiments have computer-based data acquisition systems and some also require the experiment to be controlled by a computer. The main work horse is the National Instruments (NI) multi-function USB-6008 module, but a few other systems are also in use. This page is to provide a basic introduction to data acquisition techniques and to provide information on how to communicate with the data acquisition hardware through Python.
 
 ## Topics
 
@@ -28,11 +28,7 @@ In the APL many experiments have computer-based data acquisition systems and som
  - [NI USB-6008/6009](ni_usb_6000.md)
  
     Learn how to control the National Instruments multi-function USB-6008 module from Python.
-	
- - [IEEE-488](ieee-488.md)
- 
-    Learn how to use the IEEE-488 interface to communicate with compatible devices.
-	
+		
  - [RBD 9103 Picoammeter](rbd_1903.md)
  
     Learn how to communicate with the RBD 9103 USB Picoammter using serial communications.
@@ -44,4 +40,8 @@ In the APL many experiments have computer-based data acquisition systems and som
  - [Teensy Pulse Generator](teensy.md)
  
     How to use the Teensy Double-Pulse Generator
+
+ - [IEEE-488](ieee-488.md)
+ 
+    Learn how to use the IEEE-488 interface to communicate with compatible devices.
 

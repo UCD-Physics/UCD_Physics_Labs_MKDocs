@@ -10,50 +10,48 @@ date: 2025-05-21
 # Stage 3
 
 
-
 Please note: some of the links to slides etc. are not all live yet and will be updated as the trimester progresses.
 
-## Introductory Talks 2025-2026
+
+## Introductory Talks
 
 | Topic | Presenter | Date | Time | Location | Slides |
 | ------------ | ------------- | ------------ | ------------ | ------------- | ------------ |
-| Welcome and Introduction to the Advanced Laboratories | Prof. Emma Sokell  | !Tuesday 10 September! | 14:00-14:50 | B106-BH | [Slides](https://physicslabs.ucd.ie/~apl/labs_master/docs/2024/S3Intro/Stage3_Lab_Intro_2425.pdf) |
-| Data Acquisition in Python | Prof. John Quinn | !Wednesday 11 September! | 14:00-14:50 | B106-BH | [Slides](https://physicslabs.ucd.ie/~apl/labs_master/docs/2024/S3Intro/Stage3_Python_2425.pdf) |
-| Data Analysis 1 | Prof. John Quinn | !Wednesday 18 September! | 14:00-14:50 | B106-BH | [Slides](https://physicslabs.ucd.ie/~apl/labs_master/docs/2024/S3Intro/Stage3_Data_Analysis_2425.pdf) |
-| Report Writing | Prof. Emma Sokell  | !Thursday 19 September! | 14:00-14:50 | B106-BH | [Example Manual](https://veritas.ucd.ie/~apl/labs_master/docs/2024/ReportWriting/Manual.pdf) ~ [Example Report](https://veritas.ucd.ie/~apl/labs_master/docs/2024/ReportWriting/Report.pdf) ~ [Report Guidelines](https://veritas.ucd.ie/~apl/labs_master/docs/2024/ReportWriting/ReportGuidelines.pdf) ~ [Plagiarism statement](https://veritas.ucd.ie/~apl/labs_master/docs/2024/ReportWriting/UCD_Physics_Labs_Plagiarism_statement.pdf) |
-| Data analysis 2 | Prof. John Quinn  | !Wednesday 25 September! | 14:00-14:50 | B106-BH | [Slides](https://physicslabs.ucd.ie/~apl/labs_master/docs/2024/S3Intro/Stage3_Data_Analysis_2425.pdf) |
+| Welcome and Introduction to the Advanced Laboratories | Prof. John Quinn | Tuesday 9 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/Stage3_Lab_Intro_2526.pdf) |
+| Data Acquisition in Python | Prof. John Quinn | Wednesday 10 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/Stage3_DACQ_Python_2526.pdf) |
+| Data Analysis 1 | Prof. John Quinn | Wednesday 17 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/DataAnalysis/Stage3_Data_Analysis_2526.pdf) |
+| Report Writing | Dr. Tom McCormack  |Wednesday 17 September | 15:00-15:50 | B106-BH | [Example Manual](/PDFs/ReportWriting/Manual.pdf),  [Example Report](/PDFs/ReportWriting/Example-Report.pdf),  [Report Guidelines](/PDFs/ReportWriting/ReportGuidelines.pdf), [Plagiarism statement](/PDFs/ReportWriting/UCD_Physics_Labs_Plagiarism_statement.pdf) |
+| Data analysis 2 | Prof. John Quinn  | Wednesday 24 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/DataAnalysis/Stage3_Data_Analysis_2526.pdf) |
 
 - - -
 
-## Advanced Laboratory Hours and Dates 2024-2025
+## Advanced Laboratory Hours and Dates
 
 !!! important "Attention!"
     All students are required to sign in and out of the lab using the Google form accessed via the QR code posted in the labs.
 
 The laboratories are open with demonstrator and staff support from 2 pm to 6 pm on Tuesday, Wednesday and Thursday afternoons.
 
-You should attend during all time-tabled hours and are welcome to attend outside of time-tabled hours.
+You should attend during all time-tabled hours.
 
-In addition, the labs may be accessed on Tuesday, Wednesday and Thursday mornings from 11 am but you must inform a staff member and sign in.
 
-### Physics with Astronomy and Space Science
+### *Physics* and *Physics with Astronomy and Space Science* (PASS)
 
-Trimester 1: Tuesday 10 September 2023 to Thursday 28 November 2024.
+- Trimester 1: Tuesday 9 September 2025 to Thursday 27 November 2025.
 
-Trimester 2: Tuesday, 21 January 2024 to Thursday 27 March 2024.
-
-!!admonition here -> The Physics and PASS laboratories run during the two-week field-work break (10 - 21 March 2025) 
-and close four weeks before the end of the trimester to enable all assessment to be complete before written examinations start.
-
-### Theoretical Physics:
-
-Trimester 1: Tuesday 10 September 2024 to Thursday 31 October 2024.
-
-Trimester 2: Tuesday 21 January 2025 to Friday 14 March 2025.
+- Trimester 2: Tuesday, 20 January 2026 to Thursday 26 March 2026.
 
 !!! important "Attention!"
-	The TP laboratories run during the first week of the two-week field-work break (10 - 14 March 2025) 
-to enable all assessment to be complete before written examinations start.
+    The Physics and PASS laboratories run during the two-week field-work break (9 - 20 March 2026) and close four weeks before the end of the trimester to enable all assessment to be complete before written examinations start.
+
+### *Theoretical Physics*:
+
+Trimester 1: Tuesday 9 September 2025 to Thursday 30 October 2025.
+
+Trimester 2: Tuesday 20 January 2026 to Friday 13 March 2026.
+
+!!! important "Attention!"
+	The TP laboratories run during the first week of the two-week field-work break (9 - 13 March 2025) to enable all assessment to be complete before written examinations start.
 
 - - -
 
@@ -97,21 +95,21 @@ As a rough guide, the time spent doing a main lab experiment should be split int
 
 Each report should be submitted after approximately three weeks.
 
-!!! warning "Attention!"
+!!! warning "Please note!"
     You will not be given a new experiment until the report from the previous one has been submitted.
 
 The hard deadlines for submission of laboratory reports are:
-Physics and Physics with Astronomy and Space Science:
+*Physics* and *Physics with Astronomy and Space Science*:
 
-- Report 2 due by 5pm on Tuesday 29 October 2024
-- Report 4 due by 5pm on Monday 20 January 2025
-- Report 6 due by 5pm on Monday 10 March 2025
-- Report 8 due by 5pm on Monday 07 April 2025
+- Report 2 due by 5pm on Tuesday 28 October 2025
+- Report 4 due by 5pm on Monday 19 January 2026
+- Report 6 due by 5pm on Monday 9 March 2026
+- Report 8 due by 5pm on Tuesday 7 April 2026
 
-**Theoretical Physics:**
+*Theoretical Physics*:
 
-- Report 2 due by 5pm on Monday 11 November 2024
-- Report 4 due by 5pm on Monday 31 March 2025
+- Report 2 due by 5pm on Monday 10 November 2025
+- Report 4 due by 5pm on Monday 30 March 2026
 	
 - - -
 

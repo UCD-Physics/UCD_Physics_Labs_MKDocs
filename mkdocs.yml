@@ -1,5 +1,7 @@
 site_name: UCD Physics Labs
 
+site_url: https://physicslabs.ucd.ie/
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -10,7 +12,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  
+  - pymdownx.blocks.caption
+  - md_in_html
+
+
+
 nav:
   - Home: index.md
   - Information: 
@@ -26,14 +32,14 @@ nav:
       - Coding Guidelines: documentation/python/coding_guidelines.md
       - Python How Tos: documentation/python/python_how_tos.md
     - DACQ:
-        - DACQ Main Page: documentation/dacQ/dacQ_main.md
-        - Data Aquisition Hints and Tips: documentation/dacQ/data_aq_tips.md
-        - DACQ General Concepts: documentation/dacQ/dacq_concepts.md
-        - NI USB-6008/6009: documentation/dacQ/ni_usb_6000.md
-        - IEEE-488: documentation/dacQ/ieee-488.md
-        - RBD 9103 Picoammeter: documentation/dacQ/rbd_1903.md
-        - Fresnel Diffraction using Ultrasound: documentation/dacQ/fresnel.md
-        - Teensy Pulse Generator: documentation/dacQ/teensy.md
+        - DACQ Main Page: documentation/dacq/dacq_main.md
+        - Data Aquisition Hints and Tips: documentation/dacq/data_aq_tips.md
+        - DACQ General Concepts: documentation/dacq/dacq_concepts.md
+        - NI USB-6008/6009: documentation/dacq/ni_usb_6000.md
+        - RBD 9103 Picoammeter: documentation/dacq/rbd_1903.md
+        - Fresnel Diffraction using Ultrasound: documentation/dacq/fresnel.md
+        - Teensy Pulse Generator: documentation/dacq/teensy.md
+        - IEEE-488: documentation/dacq/ieee-488.md
     - Data Analysis: documentation/data_analysis.md
     - Report Writing: documentation/report_writing.md
 
@@ -41,6 +47,14 @@ nav:
 theme:
     name: material
     logo: imgs/UCD_logo_transparency.png
-    favicon: imgs/UCD_logo_transparency_favicon.png
+    favicon: imgs/UCD_logo_transparency_favicon_small.png
     features:
-      - content.code.copy
+        - content.code.copy
+
+
+extra:
+    generator: true
+
+copyright:  "&copy; 2025 UCD School of Physics"
+
+repo_url: 
