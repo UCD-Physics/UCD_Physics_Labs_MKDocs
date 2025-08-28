@@ -1,0 +1,34 @@
+---
+title: Python Resources
+summary: Information sources for using Python
+authors:
+    - John Quinn
+    - Joe Branson
+date: 2025-05-21
+---
+
+# Python Resources
+
+
+
+Python documentation, continually under development…
+
+## Previous APL Python Slides:
+
+In the meantime, have a look at previous slides Introductory Python I which covers basic Python language features and Introductory Python II which covers some more advanced Python language features (modules, functions) and a
+
+##Online Python Documentation & Tutorials
+
+Some useful links:
+
+ - [Official Python Documentaion](https://docs.python.org/) - includes a tutorial
+ - [Python 3 Course](https://www.python-course.eu/python3_course.php)
+ - [Python Programming Tutorial](https://www.programiz.com/python-programming)
+ - [Scipy main page](https://www.scipy.org/)
+ - [SciPy Lecture Notes](https://scipy-lectures.github.io/)
+
+## Online Cheat Sheets
+
+Here is a link to a [Python language cheat sheet](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)
+
+Here are links to a [Numpy cheat sheet](https://www.dataquest.io/blog/numpy-cheat-sheet) and [another one](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf)

@@ -1,0 +1,135 @@
+---
+title: Data Acquisition General Concepts
+summary: Overview of general concepts of data aquisition devices.
+authors:
+    - John Quinn
+    - Joe Branson
+date: 2025-05-21
+---
+
+# Data Acquistion General Concepts
+
+Get up-to-speed on general data acquisition concepts.
+
+## Analogue and Digital
+
+![Analogue vs Digital](/imgs/Analogue-vs-Digital.png)
+
+Figure: Analogue -vs- Digital - caption
+
+Computers are digital systems and and at he most basic level store information as sequences of bits 
+(electronic states representing a 0 or 1, for more information on voltages and logic levels see 
+[here](https://www.allaboutcircuits.com/textbook/digital/chpt-3/logic-signal-voltage-levels/)). 
+Since there are only a finite number of ways of arranging a number of bits, digital numbers are 
+thus restricted to finite range of values. Similarly, computer memory is finite and so is the number 
+of digital values which can be stored. Thus, 
+**a signal stored on a computer is discrete in both value (amplitide) and time**, 
+as illustrated in the two figures below:
+
+![Sine function](/imgs/sine.png)
+
+Figure: Sine function
+
+![Digitized Sine function](/imgs/sine_dig.png)
+
+Figure: Digitised version of above sine function
+
+In the real world, analogue signals are continuous in both time and amplitude, and interfacing with a computer involves conversion between the digital and analogue domains. This ultimately involves either or both of:
+
+ - sending a digital number from the computer to a device which converts it into an analogue signal
+
+or
+
+ - taking an analogue signal and converting it into a digital signal which is sent to the computer.
+
+The common nomenclature is:
+Term | Acronym | Meaning
+Digitial-to-Analogue Converter | DAC | Takes a digital signal (from computer) and convert to an analogue output signal
+Analogue-Digital Converter | ADC | Converts an analogue signal to digital for recording by the computer
+
+In addition, sometimes digital signals are sent directy to control devices which have on/off states or to provide ‘clock’ 
+signals for example to move stepper motors.
+
+## Bits, Bytes and Binary Numbers
+
+Internally computers manipulate bits, which are voltages that represent either a ‘1’ or a ‘0’. Individual bits are 
+grouped together to store information (a collection of 8 bits is called a ‘byte’). For examples, ADCs may be 8 bit, 
+12 bit, 16 bit etc. The bits when combined form a binary number since each location has only two possible values.
+
+For example, consider a byte consisting of 8 bits as shown below. Each bit has a weight based on its position; the 
+lowest weight (“least significant bit”) is on the right and the weights double with each place to the left since each 
+position can have two possibilities (a 1 or 0). The number of possible values is given by 28=256 (0 to 255)
+
+![Binary conversion](/imgs/binary.png)
+
+Figure: Binary Numbers
+
+## Binary in Python
+
+Please see this guide on [binary numbers](https://www.askpython.com/python/examples/binary-numbers-operations) in Python.
+
+## Digitisation and Amplitude Resolution
+
+Since computers only store digital values digitised values are discrete. The number of bits combined with the range 
+of the ADC or DAC determines the resolution. For example, an 8-bit ADC with a range of 5V has a resolution of ~0.0195V 
+(5V/256) while a 12-bit ADC with a range of 5V has a resolution of 0.0012V (5V/4096). The affect of the number of bits 
+on the amplitude resolution can be seen in the figures below:
+
+![Sine function](/imgs/sine.png)
+
+Figure: Sine function
+
+![Sine function 2 bit](/imgs/dig_2.png)
+
+Figure: Digitised Sine function (2-bit ADC - 4 levels)
+
+![Sine function 4 bit](/imgs/dig_4.png)
+
+Figure: Digitised Sine function (4-bit ADC - 16 levels
+
+![Sine function 6 bit](/imgs/dig_6.png)
+
+Figure: Digitised Sine function (6-bit ADC - 64 levels)
+
+!!! warning
+	It is very important to match the ADC to the signal you are measuring, or to amplify the signal to an appropriate level.
+
+## Digitisation and Sampling
+
+As mentioned above, due to the discrete nature of computers, signals which change are only captured at discrete instances. 
+The process of digisiting a signal as discrete intervals is known as **sampling**. Sampling can introduce artefacts into 
+digitised signals and it is critical to understand the basics of sampling theory.
+
+How many samples are needed to adequately describe a signal? The animation below illustrates what happens when a signal 
+is sampled at different rates (note in the caption ‘f’ is the frequency of the signal and ‘fs’ is the sampling frequency):
+
+[Sampling Video](https://physicslabs.ucd.ie/docs/dacq/general_concepts/sampling.mp4)
+
+As can be seen signals of the wrong frequencies appear (aliasing) when the sample rate drops to less than twice the 
+frequency of the signal.
+
+![Sampling at 1.8f](/imgs/alias_022.png)
+
+Figure: Sampling at f<sub>s</sub> = 1.8 f
+
+![Sampling at 0.95f](/imgs/alias_025.png)
+
+Figure: Sampling at f<sub>s</sub> = 0.95 f
+
+## The Nyquist Sampling Criterion
+
+The [Nyquist Sampling Theorem](https://en.wikipedia.org/wiki/Nyquist%e2%80%93Shannon_sampling_theorem) states that to 
+completely record all of the information in a signal it must be sampled at at least twice 
+the highest frequency present, otherwise aliasing (the artifical transfer of power to lower frequencies occurs). 
+For a perfect sine wave this may also be states as a minimum of two points per cycle.
+It is critical to sample at a rate greater than the Nyquist critical frequency (twice the highest frequency present) to 
+avoid aliasing.
+
+A remarkable fact about the Nyquist sampling theorem is than once you have met the sampling criterion, all of the 
+information about the original signal is captured in the samples and the the original signal can be completely 
+reconstructed from the them. This has many applications in science, engineering, telecommunications etc. and, 
+for example, [why CD players use 44,100 Hz sampling.](https://en.wikipedia.org/wiki/44,100_Hz)
+
+Aliasing is one of the reasons wheels can appear to rotate backward, see e.g. 
+[link](https://www.youtube.com/watch?v=VNftf5qLpiA) and 
+[link](https://www.youtube.com/watch?v=QOwzkND_ooU)
