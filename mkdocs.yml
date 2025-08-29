@@ -33,8 +33,8 @@ nav:
       - Python How Tos: documentation/python/python_how_tos.md
     - DACQ:
         - DACQ Main Page: documentation/dacq/dacq_main.md
-        - Data Aquisition Hints and Tips: documentation/dacq/data_aq_tips.md
         - DACQ General Concepts: documentation/dacq/dacq_concepts.md
+        - Data Aquisition Hints and Tips: documentation/dacq/data_aq_tips.md
         - NI USB-6008/6009: documentation/dacq/ni_usb_6000.md
         - RBD 9103 Picoammeter: documentation/dacq/rbd_1903.md
         - Fresnel Diffraction using Ultrasound: documentation/dacq/fresnel.md

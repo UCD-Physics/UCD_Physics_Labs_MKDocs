@@ -103,7 +103,7 @@ digitised signals and it is critical to understand the basics of sampling theory
 How many samples are needed to adequately describe a signal? The animation below illustrates what happens when a signal 
 is sampled at different rates (note in the caption ‘f’ is the frequency of the signal and ‘fs’ is the sampling frequency):
 
-[Sampling Video](https://physicslabs.ucd.ie/docs/dacq/general_concepts/sampling.mp4)
+![type:video](/videos/sampling.mp4)
 
 As can be seen signals of the wrong frequencies appear (aliasing) when the sample rate drops to less than twice the 
 frequency of the signal.
