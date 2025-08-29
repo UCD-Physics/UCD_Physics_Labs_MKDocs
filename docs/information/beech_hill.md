@@ -25,6 +25,14 @@ wing.
 L.M.I. Building Beech Hill
 ///
 
+## Vidoes
+
+Gary Dunne (UCD Science) has created the following videos for the walk to/from the Science Centre on campus:
+
+* [Beech Hill to Centre](https://drive.google.com/file/d/1almC-Vc3cbYwndlg4NnLpCBVFkVg74OI/view)
+
+* [Centre to Beech Hill](https://drive.google.com/file/d/1iq5A1XQ0_IN04UjrVgWKcjMOzwmGHOQp/view)
+
 ## Address
 
 The full address of the School of Physics in Beech Hill is:
