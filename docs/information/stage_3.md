@@ -7,8 +7,7 @@ authors:
 date: 2025-05-21
 ---
 
-# Stage 3
-
+# Stage 3 (2025-2026)
 
 Please note: some of the links to slides etc. are not all live yet and will be updated as the trimester progresses.
 
