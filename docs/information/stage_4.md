@@ -22,7 +22,7 @@ Slides from the Introductory Lecture by Assoc. Prof. Vintro are available [here]
 
 ## Report-Writing Refresher Session
 
-Dr. Tom McCormack will conduct a report-writing refresher session on Wednesday 17 September at 4pm in room B106-BH (Beech Hill).
+Dr. Tom McCormack will conduct a report-writing refresher session on Tuesday 16 September at 3pm in room B106-BH (Beech Hill).
 
 - - -
 
