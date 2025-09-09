@@ -5,6 +5,16 @@ site_url: https://physicslabs.ucd.ie/
 copyright:  "&copy; 2025 UCD School of Physics"
 
 
+theme:
+    name: material
+    logo: imgs/UCD_logo_transparency.png
+    favicon: imgs/UCD_logo_transparency_favicon_small.png
+    features:
+        - content.code.copy
+        - navigation.path
+        - navigation.sections
+
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -27,6 +37,7 @@ nav:
     - Stage 3: information/stage_3.md
     - Stage 4: information/stage_4.md
     - Dignity and Respect: information/d_and_r.md
+    - Safety: information/safety.md
   - Documentation:
     - Python:
       - Python Overview: documentation/python/python_overview.md
@@ -47,17 +58,9 @@ nav:
     - Report Writing: documentation/report_writing.md
 
   
-theme:
-    name: material
-    logo: imgs/UCD_logo_transparency.png
-    favicon: imgs/UCD_logo_transparency_favicon_small.png
-    features:
-        - content.code.copy
-
 
 extra:
     generator: true
-
 
 plugins:
   - search
