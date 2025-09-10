@@ -45,9 +45,13 @@ of someone else reading it) and apply common sense!
 Here is a link to a document advising [Best practices for writing code comments](https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/) (examples are not Python but C/C++).
 Black
 
-There is a software package called [Black](https://black.readthedocs.io/en/stable/) which you can run on your code to automatically re-format to mostly confrom 
-to PEP 8 (it does not do calculations very well, unfortunately). It can also be installed into Jupyter Notebooks 
-so that cells can be reformatted - [see this page.](https://github.com/drillan/jupyter-black)
+There is a software package called
+[Black](https://black.readthedocs.io/en/stable/) which you can run on
+your code to automatically re-format to mostly confrom to PEP 8 (it
+does not do calculations very well, unfortunately). The extension `jupyter-lab-codeformatter` can be enabled in Jupyter Lab to run `black` on code cells.
+
+!!! info 
+    Please install & enable `jupyter-lab-codeformatter` in Jupyter Lab!
 
 ## Advanced Lab Reports
 

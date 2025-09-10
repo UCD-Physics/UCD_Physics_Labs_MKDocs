@@ -59,6 +59,6 @@ Matplotlib
 Computational Lab. Reports
 Interfacing
 
- - [Tips and Tricks for Interfacing](https://physicslabs.ucd.ie/docs/dacq/dacq_hints/)
+ - [Tips and Tricks for Interfacing](https://physicslabs.ucd.ie/documentation/dacq/data_aq_tips/)
  - [How to save your data to a file](https://github.com/UCD-Physics/Python-HowTos/blob/main/Saving_Data_Numpy.ipynb)
  - [How to do bitwise operations in Python](https://github.com/UCD-Physics/Python-HowTos/blob/main/Bitwise_operations.ipynb)
