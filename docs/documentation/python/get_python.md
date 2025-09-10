@@ -47,3 +47,18 @@ address to obtain the download link and the distribution includes many additiona
 Python 2 was officially [sunset](https://www.python.org/doc/sunset-python-2/) in early 2020.
 !!! warning
 	A lot of basic Python 3 code will run in Python 2 but subtle differences can cause unexpected behaviour, especially with division of integers!
+
+## (MS Windows) Activating a specific Python environment with Conda
+
+Note: this applies to both Conda-forge and Anaconda Python distributions, which both use conda.
+
+To activate a specific Python environment (called myenv) and then start Jupyter Lab, first create a .bat file (call it something like start_jupyter_lab.bat) with the following content:
+```
+@echo off
+call conda activate myenv
+jupyter lab
+```
+
+Double-click the file to activate the environment and start Jupyter Lab in that environment.
+
+Note: you should place the .bat file in your home folder. You can Right-Click on it and create a short-cut that can be placed on your Desktop. 

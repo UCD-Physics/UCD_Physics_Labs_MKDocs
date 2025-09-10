@@ -66,3 +66,12 @@ plugins:
   - mkdocs-video:
       is_video: True
       video_controls: True
+
+# Breadcrumbs: pip install mkdocs-breadcrumbs-plugin
+# Needs Information and Documentaion landing pages
+#
+#  - mkdocs-breadcrumbs-plugin:
+#      delimiter: " / "       # Separator between segments
+#      use_page_titles: true  # Show page titles instead of file paths
+#      home_text: "Home"      # Customize the "Home" label
+#      generate_home_index: true
