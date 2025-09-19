@@ -15,7 +15,7 @@ A guide to writing laboratory reports.
 
 Guidelines for the preparation of reports in the Stage 3 and Stage 4 Advanced Laboratories 
 can be found here: 
-[ReportGuidelines.pdf](/PDFs/ReportWriting/ReportGuidelines.pdf)
+[ReportGuidelines.pdf](/PDFs/ReportWriting/ReportGuidelines2025.pdf)
 
 ## **Computational Lab. Reports**
 
