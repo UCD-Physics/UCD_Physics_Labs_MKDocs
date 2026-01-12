@@ -53,6 +53,7 @@ nav:
         - Fresnel Diffraction using Ultrasound: documentation/dacq/fresnel.md
         - Teensy Pulse Generator: documentation/dacq/teensy.md
         - IEEE-488: documentation/dacq/ieee-488.md
+    - Falstad Circuit simulator: documentation/Falstad_circuit_sim.md
     - Data Analysis: documentation/data_analysis.md
     - Report Writing: documentation/report_writing.md
 
