@@ -20,6 +20,7 @@ Please note: some of the links to slides etc. are not all live yet and will be u
 | Data Analysis 1 | Prof. John Quinn | Wednesday 17 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/DataAnalysis/Stage3_Data_Analysis_2526.pdf) |
 | Report Writing | Dr. Tom McCormack  |Tuesday 16 September | 14:00-14:50 | B106-BH | [Example Manual](/PDFs/ReportWriting/Manual.pdf),  [Example Report](/PDFs/ReportWriting/Example-Report.pdf),  [Report Guidelines](/PDFs/ReportWriting/ReportGuidelines2025.pdf), [Plagiarism statement](/PDFs/ReportWriting/UCD_Physics_Labs_Plagiarism_statement.pdf) |
 | Data analysis 2 | Prof. John Quinn  | Wednesday 24 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/DataAnalysis/Stage3_Data_Analysis_2526.pdf) |
+| Trimester 2 | Dr. Tom McCormack  | Wednesday 21 January | 14:00-14:50 | B106-BH | [Slides](/PDFs/Stage3_Trimester_2_Intro_2526.pdf) |
 
 - - -
 
