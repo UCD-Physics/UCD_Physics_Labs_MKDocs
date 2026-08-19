@@ -25,7 +25,7 @@ wing.
 L.M.I. Building Beech Hill
 ///
 
-## Vidoes
+## Videos
 
 Gary Dunne (UCD Science) has created the following videos for the walk to/from the Science Centre on campus:
 

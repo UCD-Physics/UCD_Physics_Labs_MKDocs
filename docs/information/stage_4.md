@@ -4,25 +4,25 @@ summary: Information for Stage 4 students
 authors:
     - John Quinn
     - Joe Branson
-date: 2025-05-21
+date: 2026-08-19
 ---
 
-# Stage 4 (2025-2026)
+# Stage 4 (2026-2027)
 
 
 
 ## Introductory Lecture
 
-The Stage 4 Advanced Laboratory Introductory Talk will be given by Assoc. Prof. Luis Leon-Vintro at 2pm on Tuesday 9 
-September 2025 in room B000-BH (Beech Hill).
+The Stage 4 Advanced Laboratory Introductory Talk will be given by Assoc. Prof. Luis Leon-Vintro at 2pm on Tuesday 8 
+September 2026 in room B000-BH (Beech Hill).
 
-Slides from the Introductory Lecture by Assoc. Prof. Vintro are available [here](/PDFs/Stage_4_Introduction_2526.pdf).
+Slides from the Introductory Lecture by Assoc. Prof. Vintro are available [here](/PDFs/Stage_4_Introduction_2627.pdf).
 
 - - -
 
 ## Report-Writing Refresher Session
 
-Dr. Tom McCormack will conduct a report-writing refresher session on Tuesday 16 September at 3pm in room B106-BH (Beech Hill).
+Dr. Tom McCormack will conduct a report-writing refresher session on Tuesday 15 September at 3pm in room B106-BH (Beech Hill).
 
 - - -
 
@@ -36,17 +36,20 @@ The laboratories are open with demonstrator and staff support from 2 pm to 6 pm 
 The dates for the laboratories are:
 ### PHYC 40600 and PHYC 40970 (15 credit, two-trimester)
 
-- Trimester 1: Tuesday 9 September 2025 to Thursday 27 November 2025
+- Trimester 1: Tuesday 8 September 2026 to Thursday 26 November 2026
 
-- Trimester 2: Tuesday 20 January 2026 to Thursday 26 February 2026
+- Trimester 2: Tuesday 19 January 2027 to Thursday 25 February 2027
 
 ### PHYC 40330 and PHYC 40690 (5 credit, one-trimester)
 
-- Trimester 1: Tuesday 9 September 2025 to Thursday 30 October 2025
+- Trimester 1: Tuesday 8 September 2026 to Thursday 29 October 2026
 
 or
 
-- Trimester 2: Tuesday 20 January 2026 to Friday 13 March 2026
+- Trimester 2: Tuesday 19 January 2027 to Friday 12 March 2027
+
+!!! important "Attention!"
+	The 5-credit trimester-2 lab modules run during the first week of the two-week field-work break (8 - 12 March 2027).
 
 - - -
 
@@ -55,15 +58,15 @@ or
 The hard deadlines for submission of laboratory reports are:
 ###PHYC 40600 and PHYC 40970 (15 credit, two-trimester)
 
-- Report 2 due by 5pm on Tuesday 28 October 2025
-- Report 4 due by 5pm on Monday 19 January 2026
-- Report 6 due by 5pm on Monday 9 March 2026
+- Report 2 due by 5pm on Tuesday 27 October 2026
+- Report 4 due by 5pm on Monday 18 January 2027
+- Report 6 due by 5pm on Monday 8 March 2027
 
-###PHYC 40330 and PHYC 40690 (5 credit, one-trimester)
+### PHYC 40330 and PHYC 40690 (5 credit, one-trimester)
 
-- Report 2 due by 5pm on Monday 10 November 2025
+- Report 2 due by 5pm on Monday 9 November 2026
 or
-- Report 2 due by 5pm on Monday 30 March 2025
+- Report 2 due by 5pm on Tuesday 30 March 2026
 
 - - -
 

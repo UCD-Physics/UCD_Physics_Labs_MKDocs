@@ -17,4 +17,4 @@ computer-based [Data Acquisition](/documentation/dacq/dacq_main) and [Data Analy
 From September 2023 the UCD School of Physics has relocated to Beech Hill whilst the Science Phase III upgrade is in progress.
 
 [Information and directions](information/beech_hill.md){ .md-button .md-button--primary}
-[Vidoes](information/beech_hill#vidoes){ .md-button .md-button--primary}
+[Videos](information/beech_hill#videos){ .md-button .md-button--primary}

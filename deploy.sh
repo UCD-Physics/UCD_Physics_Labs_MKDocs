@@ -15,7 +15,7 @@ mkdocs build
 
 mv site apl
 
-npx pagefind --site "apl"
+# npx pagefind --site "apl"
 
 tar zcvf apl.tgz apl
 

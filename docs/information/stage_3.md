@@ -4,10 +4,12 @@ summary: Information for Stage 3 students
 authors:
     - John Quinn
     - Joe Branson
-date: 2025-05-21
+date: 2026-08-19
 ---
 
-# Stage 3 (2025-2026)
+# Stage 3 (2026-2027)
+
+All lectures and labs are in Beech Hill.
 
 Please note: some of the links to slides etc. are not all live yet and will be updated as the trimester progresses.
 
@@ -15,12 +17,12 @@ Please note: some of the links to slides etc. are not all live yet and will be u
 
 | Topic | Presenter | Date | Time | Location | Slides |
 | ------------ | ------------- | ------------ | ------------ | ------------- | ------------ |
-| Welcome and Introduction to the Advanced Laboratories | Prof. John Quinn | Tuesday 9 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/Stage3_Lab_Intro_2526.pdf) |
-| Data Acquisition in Python | Prof. John Quinn | Wednesday 10 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/Stage3_DACQ_Python_2526.pdf) |
-| Data Analysis 1 | Prof. John Quinn | Wednesday 17 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/DataAnalysis/Stage3_Data_Analysis_2526.pdf) |
-| Report Writing | Dr. Tom McCormack  |Tuesday 16 September | 14:00-14:50 | B106-BH | [Example Manual](/PDFs/ReportWriting/Manual.pdf),  [Example Report](/PDFs/ReportWriting/Example-Report.pdf),  [Report Guidelines](/PDFs/ReportWriting/ReportGuidelines2025.pdf), [Plagiarism statement](/PDFs/ReportWriting/UCD_Physics_Labs_Plagiarism_statement.pdf) |
-| Data analysis 2 | Prof. John Quinn  | Wednesday 24 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/DataAnalysis/Stage3_Data_Analysis_2526.pdf) |
-| Trimester 2 | Dr. Tom McCormack  | Wednesday 21 January | 14:00-14:50 | B106-BH | [Slides](/PDFs/Stage3_Trimester_2_Intro_2526.pdf) |
+| Welcome and Introduction to the Advanced Laboratories | Prof. John Quinn | Tuesday 8 September | 14:00-14:50 | B106-BH  | [Slides](/PDFs/Stage3_Lab_Intro_2627.pdf) |
+| Data Acquisition in Python | Prof. John Quinn | Wednesday 9 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/Stage3_DACQ_Python_2627.pdf) |
+| Report Writing | Dr. Tom McCormack  |Tuesday 15 September | 14:00-14:50 | B106-BH | [Example Manual](/PDFs/ReportWriting/Manual.pdf),  [Example Report](/PDFs/ReportWriting/Example-Report.pdf),  [Report Guidelines](/PDFs/ReportWriting/ReportGuidelines2025.pdf), [Plagiarism statement](/PDFs/ReportWriting/UCD_Physics_Labs_Plagiarism_statement.pdf) |
+| Data Analysis 1 | Prof. John Quinn | Wednesday 16 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/DataAnalysis/Stage3_Data_Analysis_2627.pdf) |
+| Data analysis 2 | Prof. John Quinn  | Wednesday 23 September | 14:00-14:50 | B106-BH | [Slides](/PDFs/DataAnalysis/Stage3_Data_Analysis_2627.pdf) |
+| Trimester 2 | Dr. Tom McCormack  | Wednesday 20 January | 14:00-14:50 | B106-BH | [Slides](/PDFs/Stage3_Trimester_2_Intro_2627.pdf) |
 
 - - -
 
@@ -36,21 +38,21 @@ You should attend during all time-tabled hours.
 
 ### *Physics* and *Physics with Astronomy and Space Science* (PASS)
 
-- Trimester 1: Tuesday 9 September 2025 to Thursday 27 November 2025.
+- Trimester 1: Tuesday 8 September 2026 to Thursday 26 November 2026.
 
-- Trimester 2: Tuesday, 20 January 2026 to Thursday 26 March 2026.
+- Trimester 2: Tuesday, 19 January 2026 to Thursday 25 March 2027.
 
 !!! important "Attention!"
-    The Physics and PASS laboratories run during the two-week field-work break (9 - 20 March 2026) and close four weeks before the end of the trimester to enable all assessment to be complete before written examinations start.
+    The Physics and PASS laboratories run during the two-week field-work break (8 - 19 March 2027) and close four weeks before the end of the trimester to enable all assessment to be complete before written examinations start.
 
 ### *Theoretical Physics*:
 
-Trimester 1: Tuesday 9 September 2025 to Thursday 30 October 2025.
+Trimester 1: Tuesday 8 September 2026 to Thursday 29 October 2026.
 
-Trimester 2: Tuesday 20 January 2026 to Friday 13 March 2026.
+Trimester 2: Tuesday 19 January 2027 to Friday 12 March 2027.
 
 !!! important "Attention!"
-	The TP laboratories run during the first week of the two-week field-work break (9 - 13 March 2025) to enable all assessment to be complete before written examinations start.
+	The TP laboratories run during the first week of the two-week field-work break (8 - 12 March 2027) to enable all assessment to be complete before written examinations start.
 
 - - -
 
@@ -100,19 +102,19 @@ Each report should be submitted after approximately three weeks.
 The hard deadlines for submission of laboratory reports are:
 *Physics* and *Physics with Astronomy and Space Science*:
 
-- Report 2 due by 5pm on Tuesday 28 October 2025
-- Report 4 due by 5pm on Monday 19 January 2026
-- Report 6 due by 5pm on Monday 9 March 2026
-- Report 8 due by 5pm on Tuesday 7 April 2026
+- Report 2 due by 5pm on Tuesday 27 October 2026
+- Report 4 due by 5pm on Monday 18 January 2027
+- Report 6 due by 5pm on Monday 8 March 2027
+- Report 8 due by 5pm on Monday 5 April 2027
 
 *Theoretical Physics*:
 
-- Report 2 due by 5pm on Monday 10 November 2025
-- Report 4 due by 5pm on Monday 30 March 2026
+- Report 2 due by 5pm on Monday 9 November 2026
+- Report 4 due by 5pm on Tuesday 30 March 2027
 	
 - - -
 
-## Late Submission of Laboratory Reports
+## Late Submission of Laboratory Reports (to be updated with new UCD Policy for 2026-2027)
 
 The [UCD Late Submission of Coursework](https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=GD-DOCLAND&ID=137) policy applies.
 

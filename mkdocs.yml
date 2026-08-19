@@ -26,6 +26,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.blocks.caption
   - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
 
 
 
@@ -76,3 +78,8 @@ plugins:
 #      use_page_titles: true  # Show page titles instead of file paths
 #      home_text: "Home"      # Customize the "Home" label
 #      generate_home_index: true
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
