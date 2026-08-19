@@ -19,7 +19,7 @@ of ns, configurable via software. It is implemented using a
 in Arduino/C and is communicated with via serial over USB. This page contains some details on how 
 to use the generator.
 
-![Teensey Pulse Generator internals](/imgs/PG_inside.png){: style="height:500px;width:450px"}
+![Teensey Pulse Generator internals](../../imgs/PG_inside.png){: style="height:500px;width:450px"}
 
 ## **Firmware**
 
@@ -47,7 +47,7 @@ For example, the output for:
 
 is shown in the image below:
 
-![Example pulses](/imgs/PG_example_pulses.png)
+![Example pulses](../../imgs/PG_example_pulses.png)
 
 ## **Serial Communication**
 
@@ -112,7 +112,7 @@ looking for _FT232R USB UART_ in Windows (7) _Devices and Printers_, double clic
 select _Hardware_ and we see the COM port (COM3 when I tested this one). If you are having 
 problems I recommend this as a fallback to see what the device is doing.
 
-Alternatively: use pyserial (see [Python section](link_to_lower_down) below):
+Alternatively: use pyserial:
 
 PySerial has a useful command which lists active com ports (from Python):
 

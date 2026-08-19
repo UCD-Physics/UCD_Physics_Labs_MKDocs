@@ -11,7 +11,7 @@ date: 2025-05-21
 
 Learn how to control the National Instruments multi-function USB-6008 module from Python.
 
-![NIUSB-6008](/imgs/NI_USB6008.png){: style="height:450px;width:450px"}
+![NIUSB-6008](../../imgs/NI_USB6008.png){: style="height:450px;width:450px"}
 
 Figure: NI USB 6008
 
@@ -72,7 +72,7 @@ in the diagram.
 | P0/P1 | Digital I/O Line |
 | GND | Ground |
 
-![NI connections](/imgs/NI_USB6008_connections.png){: style="height:450px;width:450px"}
+![NI connections](../../imgs/NI_USB6008_connections.png){: style="height:450px;width:450px"}
 
 Figure: NI USB-6008/6009 Connections
 
@@ -192,7 +192,7 @@ for all channels combined.
 
 `ADC.sampleVoltages()` returns a dictionary where the keys are the channel ids and the values are the samples (as tuples):
 
-![Sample Voltages Breakdown](/imgs/samplevoltages.png)
+![Sample Voltages Breakdown](../../imgs/samplevoltages.png)
 
 Figure: dictionary returned by sampleVoltages
 

@@ -9,7 +9,7 @@ date: 2025-05-21
 
 # Python
 
-![Python Logo](/imgs/python.png) 
+![Python Logo](../../imgs/python.png) 
 
 ## Why use Python?
 
@@ -37,9 +37,9 @@ advice, and hints and tips on using Python to solve problems and analyse and pre
 
  - [Get Python](get_python.md)
 Python distribution and version Information on the Python distribution and version to download…
- - [Python Resources](https://physicslabs.ucd.ie/docs/python/python_resources/)
+ - [Python Resources](python_resources.md)
 Python documentation, continually under development…
- - [Coding Guidelines](https://physicslabs.ucd.ie/docs/python/coding_guidelines/)
+ - [Coding Guidelines](coding_guidelines.md)
 It is important to write easy-to-understand and easy-to-maintain code…
- - [Python How Tos](https://physicslabs.ucd.ie/docs/python/python_howtos/)
+ - [Python How Tos](python_how_tos.md)
 This section will provide ‘how-to’s on many basic concepts in Python, Numpy, Scipy and Jupyter Notebooks…

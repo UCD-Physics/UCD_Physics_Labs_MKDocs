@@ -13,7 +13,7 @@ Get up-to-speed on general data acquisition concepts.
 
 ## Analogue and Digital
 
-![Analogue vs Digital](/imgs/Analogue-vs-Digital.png)
+![Analogue vs Digital](../../imgs/Analogue-vs-Digital.png)
 
 Figure: Analogue -vs- Digital - caption
 
@@ -26,11 +26,11 @@ of digital values which can be stored. Thus,
 **a signal stored on a computer is discrete in both value (amplitide) and time**, 
 as illustrated in the two figures below:
 
-![Sine function](/imgs/sine.png)
+![Sine function](../../imgs/sine.png)
 
 Figure: Sine function
 
-![Digitized Sine function](/imgs/sine_dig.png)
+![Digitized Sine function](../../imgs/sine_dig.png)
 
 Figure: Digitised version of above sine function
 
@@ -60,7 +60,7 @@ For example, consider a byte consisting of 8 bits as shown below. Each bit has a
 lowest weight (“least significant bit”) is on the right and the weights double with each place to the left since each 
 position can have two possibilities (a 1 or 0). The number of possible values is given by 28=256 (0 to 255)
 
-![Binary conversion](/imgs/binary.png)
+![Binary conversion](../../imgs/binary.png)
 
 Figure: Binary Numbers
 
@@ -75,19 +75,19 @@ of the ADC or DAC determines the resolution. For example, an 8-bit ADC with a ra
 (5V/256) while a 12-bit ADC with a range of 5V has a resolution of 0.0012V (5V/4096). The affect of the number of bits 
 on the amplitude resolution can be seen in the figures below:
 
-![Sine function](/imgs/sine.png)
+![Sine function](../../imgs/sine.png)
 
 Figure: Sine function
 
-![Sine function 2 bit](/imgs/dig_2.png)
+![Sine function 2 bit](../../imgs/dig_2.png)
 
 Figure: Digitised Sine function (2-bit ADC - 4 levels)
 
-![Sine function 4 bit](/imgs/dig_4.png)
+![Sine function 4 bit](../../imgs/dig_4.png)
 
 Figure: Digitised Sine function (4-bit ADC - 16 levels
 
-![Sine function 6 bit](/imgs/dig_6.png)
+![Sine function 6 bit](../../imgs/dig_6.png)
 
 Figure: Digitised Sine function (6-bit ADC - 64 levels)
 
@@ -103,16 +103,16 @@ digitised signals and it is critical to understand the basics of sampling theory
 How many samples are needed to adequately describe a signal? The animation below illustrates what happens when a signal 
 is sampled at different rates (note in the caption ‘f’ is the frequency of the signal and ‘fs’ is the sampling frequency):
 
-![type:video](/videos/sampling.mp4)
+![type:video](../../videos/sampling.mp4)
 
 As can be seen signals of the wrong frequencies appear (aliasing) when the sample rate drops to less than twice the 
 frequency of the signal.
 
-![Sampling at 1.8f](/imgs/alias_022.png)
+![Sampling at 1.8f](../../imgs/alias_022.png)
 
 Figure: Sampling at f<sub>s</sub> = 1.8 f
 
-![Sampling at 0.95f](/imgs/alias_025.png)
+![Sampling at 0.95f](../../imgs/alias_025.png)
 
 Figure: Sampling at f<sub>s</sub> = 0.95 f
 
