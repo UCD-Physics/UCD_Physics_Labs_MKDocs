@@ -1,0 +1,1680 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://physicslabs.ucd.ie/documentation/dacq/fresnel/">
+      
+      
+        <link rel="prev" href="../rbd_1903/">
+      
+      
+        <link rel="next" href="../teensy/">
+      
+      
+      <link rel="icon" href="../../../imgs/UCD_logo_transparency_favicon_small.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+    
+    
+      
+        <title>Fresnel - UCD Physics Labs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fresnel-diffraction-using-ultrasound" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="UCD Physics Labs" class="md-header__button md-logo" aria-label="UCD Physics Labs" data-md-component="logo">
+      
+  <img src="../../../imgs/UCD_logo_transparency.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            UCD Physics Labs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fresnel
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="UCD Physics Labs" class="md-nav__button md-logo" aria-label="UCD Physics Labs" data-md-component="logo">
+      
+  <img src="../../../imgs/UCD_logo_transparency.png" alt="logo">
+
+    </a>
+    UCD Physics Labs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Information
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/beech_hill/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Beech Hill
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/stage_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stage 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/stage_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stage 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/d_and_r/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dignity and Respect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/get_python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Get Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/coding_guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coding Guidelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python_how_tos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python How Tos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DACQ
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            DACQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dacq_main/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DACQ Main Page
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dacq_concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DACQ General Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_aq_tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Aquisition Hints and Tips
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ni_usb_6000/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NI USB-6008/6009
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rbd_1903/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RBD 9103 Picoammeter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Fresnel Diffraction using Ultrasound
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fresnel Diffraction using Ultrasound
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-acquisition-for-the-fresnel-diffraction-with-ultrasound-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Acquisition for the Fresnel Diffraction with Ultrasound Experiment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-pico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Pico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Raspberry Pi Pico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stepper-motor-functions-on-the-pi-pico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stepper Motor functions on the Pi Pico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#picoserial-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      PicoSerial class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#picoserial-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      PicoSerial usage:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-usb-picoscope" class="md-nav__link">
+    <span class="md-ellipsis">
+      The USB Picoscope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The USB Picoscope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-for-reading-the-picoscope-from-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps for reading the Picoscope from Python:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import libraries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-connection-to-the-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open connection to the device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-sampling-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure sampling interval
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specify-and-configure-channels-to-be-read-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specify and configure channels to be read out
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up trigger
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-acquisition-and-wait-for-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the acquisition and wait for ready
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readout-data-and-make-time-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Readout data and make time array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-and-close-connection-when-finished" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop and close connection when finished
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-some-useful-picoscope-python-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of some useful Picoscope Python commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teensy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teensy Pulse Generator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ieee-488/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IEEE-488
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Falstad_circuit_sim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Falstad Circuit simulator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../report_writing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Report Writing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-acquisition-for-the-fresnel-diffraction-with-ultrasound-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Acquisition for the Fresnel Diffraction with Ultrasound Experiment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-pico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Pico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Raspberry Pi Pico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stepper-motor-functions-on-the-pi-pico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stepper Motor functions on the Pi Pico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#picoserial-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      PicoSerial class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#picoserial-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      PicoSerial usage:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-usb-picoscope" class="md-nav__link">
+    <span class="md-ellipsis">
+      The USB Picoscope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The USB Picoscope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-for-reading-the-picoscope-from-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps for reading the Picoscope from Python:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import libraries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-connection-to-the-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open connection to the device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-sampling-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure sampling interval
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specify-and-configure-channels-to-be-read-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specify and configure channels to be read out
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up trigger
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-acquisition-and-wait-for-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the acquisition and wait for ready
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readout-data-and-make-time-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Readout data and make time array
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-and-close-connection-when-finished" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop and close connection when finished
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-some-useful-picoscope-python-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of some useful Picoscope Python commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="fresnel-diffraction-using-ultrasound"><strong>Fresnel Diffraction using Ultrasound</strong></h1>
+<p>Documentation for the control and data acquisition for the Fresnel Diffraction with Ultrasound experiment.</p>
+<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>In 2022 as part of a final year Physics project the experiemnt to investigate Fresnel Diffraction using 
+Ultrasound was upgraded to allow fine position of the diffraction screen(s) an automated readout of the 
+traces using a USB oscillosopce.</p>
+<p>Please see the <a href="https://github.com/JohnQuinn1/Fresnel_Ultrasound">GitHub repository</a> for documentation 
+and a useful Python library (picoserial.py).</p>
+<p>A <a href="https://github.com/JohnQuinn1/Fresnel_Ultrasound/blob/main/Fresnel%20DACQ.ipynb">Jupyter notebook</a> 
+with documentation is included in the repository and is repeated below.</p>
+<hr>
+<h2 id="data-acquisition-for-the-fresnel-diffraction-with-ultrasound-experiment"><strong>Data Acquisition for the Fresnel Diffraction with Ultrasound Experiment</strong></h2>
+<p>In this lab a microstepped motor is used to precisely move an ultrasound receiver mounted on a linear slider 
+rail. One-sixteenth microstepping is used and with the lead-screw system very smooth and fine movements are 
+achiavable. <strong>It was measured that 200,000 steps moves the recevier through 50 cm.</strong></p>
+<p>The motor is controlled by a Raspberry Pi Pico, which can be communicated with over Python using PySerial.</p>
+<p>The data acquisition is carried out in Python using a Picoscope, which is a USB oscilloscope.</p>
+<h2 id="raspberry-pi-pico"><strong>Raspberry Pi Pico</strong></h2>
+<p>The <a href="https://www.raspberrypi.com/products/raspberry-pi-pico/">Raspberry Pi Pico</a> is a microcontroller that 
+runs <a href="https://micropython.org/">Micropython.</a></p>
+<p>A limit switch is installed at one end of the slider rail, which is used to set the home zero position of the 
+slider and prevent the motor driving too far. The limit is implemented in the software installed on the Pi Pico - 
+for safety reasons you should only use the supplied functions and not directly manipulate the motor. The limit 
+at the opposite end is based on a maximum number of steps from the limit switch. At any point the limit switch 
+can be pressed by hand to stop the motor moving.</p>
+<p>The code to control the motor is installed in a file called <code>main.py</code> which is executed when the Pi Pico boots up. 
+One can interact directly with the Pi Pico using the Thonny program and execute MicroPython commands including the 
+functions to move the motor defined in <code>main.py</code>. However, for the purpose of automating the experiment, we want to 
+issue commands to the Pi Pico directly from Python running on a standard PC. The is achieved by sending commands 
+and receiving responses over the USB connection using PySerial.</p>
+<p>A class (<code>PicoSerial</code>) is provided in this GitHub repository to facilitate easy communication with the Pi Pico. 
+The serial over USB approach uses the Pi Pico’s REPL mode (Read-Evaluate-Print Loop) where commands received 
+by the Pi Pico are read and echod to the terminal (serial line), evaluated, answer printed, and then repeat. 
+This means that prompts seen in the terminal in Thonny (<code>’&gt;&gt;&gt;’</code>) are included and must be handled. Also, Python 
+strings must be encoded as UTF8 for sending and decoded from UTF8 for receiving - this is handled automatically 
+by the <code>PicoSerial</code> class. Sample code for doing this is provided.</p>
+<p>There is also an issue with timing - to read blocks of text a timeout must be specified and if a command takes 
+longer than the timeout (default is 1 s) to execute on the Pi Pico then a black line is returned and a re-read 
+must happen. The PicoSerial class has a function which re-reads until a non-empty response is received.</p>
+<p>Note: sometimes the Pi Pico needs to be re-started after using Thonny so that it can communicate with the PC 
+using Python and PySerial. If you need to restart it you must turn off the power to the power supply and also 
+disconnect the USB cable from the computer.</p>
+<h3 id="stepper-motor-functions-on-the-pi-pico"><strong>Stepper Motor functions on the Pi Pico</strong></h3>
+<p>The functions for moving the stepped motor defined in main.py on the Pi Pico are:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>initialise()</code></td>
+</tr>
+<tr>
+<td><code>move(steps: int)</code></td>
+</tr>
+<tr>
+<td><code>get_current_pos() -&gt; int</code></td>
+</tr>
+<tr>
+<td><code>get_max_pos() -&gt; int</code></td>
+</tr>
+</tbody>
+</table>
+<p>These commands print responses and do not return any values. They are explained below:</p>
+<p><code>intialise():</code></p>
+<ul>
+<li>must be called when system is first powered up or if limit switch is accidentally hit</li>
+<li>it moves the slider until the limit switch is activated and then backs away until the
+ limit switch is released. This is defined to be the zero position. Note: on some rare occasions 
+ this can be on the edge and the limit switch can activate in the zero position</li>
+<li>the function does not return a value but prints values which must be handled.</li>
+<li>it prints 'Initialising' immediately once called and then prints 'Initialised' once finished. 
+ If the slider is a long way from the limit switch it can take considerably more than one second 
+ and hence the serial may time out.</li>
+<li>if the slider is moved so that the limit switch is accidentally activated the initialise() must 
+ be called again.</li>
+</ul>
+<p><code>move(steps: int):</code></p>
+<ul>
+<li>moves the motor some number of steps.</li>
+<li>the only argument, steps is an integer and if it is positive then the slider moves away from the 
+ limit switch whereas if it is negative the slider moves towards the limit switch.</li>
+<li>the function does not return a value but prints values which must be handled.<ul>
+<li>the function immediately prints 'Moving' when called and then 'Success' when it successfully 
+ finishes moving the slider.</li>
+</ul>
+</li>
+<li>it may also print one of the following errors if there is a problem:<ul>
+<li>'Error: Not initialised!'</li>
+<li>'Error: Beyond limit requested - not moved' (if attempt to move beyond the maximum limit of 
+ 200,000 steps set in software)</li>
+<li>'Error: Limit switch hit - you must re-initilise() before moving again.'</li>
+</ul>
+</li>
+</ul>
+<p><code>get_current_pos() -&gt; int:</code></p>
+<ul>
+<li>returns the current position of the slider in terms of the number of steps the motor has taken 
+ from the zero position.</li>
+</ul>
+<p><code>get_max_pos() -&gt; int:</code></p>
+<ul>
+<li>returns the maximum position of the slider in terms of the number of steps the motor can make 
+ from the zero position.</li>
+</ul>
+<h3 id="picoserial-class"><strong><code>PicoSerial</code> class</strong></h3>
+<p>A class called <code>PicoSerial</code> was developed to aid communications between Python running on the PC 
+and the stepper motor code on the Pi Pico.</p>
+<p>It is in a file called <code>picoserial.py</code> in this repository and you can either copy that file into 
+your working directory or copy and paste the code into a cell in a Jupyter notebook. Here is a 
+direct <a href="https://github.com/JohnQuinn1/Fresnel_Ultrasound/blob/main/picoserial.py">link to PicoSerial.py on github.</a></p>
+<p>The REPL approach and code were motivated by <a href="http://blog.rareschool.com/2021/01/controlling-raspberry-pi-pico-using.html">this artice.</a></p>
+<h3 id="picoserial-usage"><strong>PicoSerial usage:</strong></h3>
+<p>Import and make an instance with:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">picoserial</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">motor</span> <span class="o">=</span>  <span class="n">picoserial</span><span class="o">.</span><span class="n">PicoSerial</span><span class="p">()</span>  <span class="c1"># use default constructor values</span>
+</span></code></pre></div>
+<p>The PicoSerial constructor allows the following arguments to be specified (they all have default 
+values which should generally be fine.):</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">picoserial</span><span class="o">.</span><span class="n">PicoSerial</span><span class="p">(</span><span class="n">device</span><span class="o">=</span><span class="s1">'COM4'</span><span class="p">,</span> <span class="n">baud</span><span class="o">=</span><span class="mi">9600</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The methods (functions) defined in the class are:</p>
+<table>
+<thead>
+<tr>
+<th>PicoSerial method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>receive() -&gt; str</code></td>
+</tr>
+<tr>
+<td><code>receive_reply(max_reply_attempts: int = 1) -&gt; str</code></td>
+</tr>
+<tr>
+<td><code>send(text: str) -&gt; bool</code></td>
+</tr>
+<tr>
+<td><code>set_timeout(timeout: float) -&gt; None</code></td>
+</tr>
+</tbody>
+</table>
+<p>Below is an explanation of the PicoSerial methods:</p>
+<p><code>receive() -&gt; str:</code></p>
+<ul>
+<li>Read one line (’\n’ terminated) from the serial bus and decode it, removing any <code>&gt;&gt;&gt;</code>. 
+ Will wait forever unless Serial timeout specified.</li>
+<li>Takes no arguments and returns a string, which may be empty if timed out.</li>
+</ul>
+<p><code>receive_reply(max_reply_attempts: int = 1) -&gt; str:</code></p>
+<ul>
+<li>Repeatedly calls <code>receive()</code> until a non-empty string is returned</li>
+<li><code>max_reply_attempts</code> is the maximum number of attempts to make before returning.</li>
+<li>It returns a string, which may be empty if timed out.</li>
+</ul>
+<p><code>send(text: str) -&gt; bool:</code></p>
+<ul>
+<li>Encode provided text and send over serial line.</li>
+<li>The Pi Pico first echos whatever is sent to it - thus it is read back and compared to 
+ what was sent as a check that everything is working ok.</li>
+<li>The method returns either <code>True</code> or <code>False</code> depending on whether the response matched 
+ what was sent or not - it is not an indication of whether the command sent to the Pi Pico 
+ succeeded, nor related to the output of that command.</li>
+</ul>
+<p>Example:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">picoserial</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">motor</span> <span class="o">=</span>  <span class="n">picoserial</span><span class="o">.</span><span class="n">PicoSerial</span><span class="p">()</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">motor</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">"initialise()"</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">motor</span><span class="o">.</span><span class="n">receive</span><span class="p">())</span>            <span class="c1"># should print 'Initialising'</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">motor</span><span class="o">.</span><span class="n">receive_reply</span><span class="p">(</span><span class="mi">1000</span><span class="p">))</span>
+</span></code></pre></div>
+<p>produces:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">Initialising</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">Initialised</span>
+</span></code></pre></div>
+<h2 id="the-usb-picoscope"><strong>The USB Picoscope</strong></h2>
+<p>The device used to take data is a USB oscilloscope 
+(<a href="https://www.picotech.com/oscilloscope/2000/picoscope-2000-overview">Picoscope 2204a</a>). 
+It functions in the same way as a regular oscilloscope, with channels that read voltage data, 
+however it is controlled using a PC. There is a PicoScope program that shows the traces, and 
+this should be used to check the trace before taking data in Python. The appropriate timebase 
+and voltage range may be determined by viewing the traces in this application.</p>
+<p>The Picoscope is used to collect data in Python, where amplitude values may be recorded over 
+a specified timebase.</p>
+<p>To communicate with the Pi Pico in Python we use a third-party library available here</p>
+<p>The steps to use the Picoscope 2204a in Python are:</p>
+<ol>
+<li>Import libraries</li>
+<li>Open connection to the device</li>
+<li>Configure sampling interval</li>
+<li>Specify and configure channels to be read out</li>
+<li>Set up trigger</li>
+<li>Run the acquisition and wait for ready</li>
+<li>Read out data and make time array.</li>
+</ol>
+<h3 id="steps-for-reading-the-picoscope-from-python"><strong>Steps for reading the Picoscope from Python:</strong></h3>
+<h3 id="import-libraries"><strong>Import libraries</strong></h3>
+<p>The libraries to interface with it must be imported:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">picoscope</span><span class="w"> </span><span class="kn">import</span> <span class="n">ps2000</span>
+</span></code></pre></div>
+<h3 id="open-connection-to-the-device"><strong>Open connection to the device</strong></h3>
+<p>The scope must then be set up, specifying parameters such as the sampling interval and the 
+duration of the recording
+Setting up the Picoscope device is shown in the following example:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">ps</span> <span class="o">=</span> <span class="n">ps2000</span><span class="o">.</span><span class="n">PS2000</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="configure-sampling-interval"><strong>Configure sampling interval</strong></h3>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">waveform_desired_duration</span> <span class="o">=</span> <span class="mf">50E-6</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">obs_duration</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">waveform_desired_duration</span> <span class="c1">#range plotted</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">sampling_interval</span> <span class="o">=</span> <span class="n">obs_duration</span> <span class="o">/</span> <span class="mi">4096</span> <span class="c1">#sampling interval</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">(</span><span class="n">actualSamplingInterval</span><span class="p">,</span> <span class="n">nSamples</span><span class="p">,</span> <span class="n">maxSamples</span><span class="p">)</span> <span class="o">=</span> \
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">ps</span><span class="o">.</span><span class="n">setSamplingInterval</span><span class="p">(</span><span class="n">sampling_interval</span><span class="p">,</span> <span class="n">obs_duration</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The <code>waveform_desired_duration</code> value is specified in seconds, and can help in choosing a 
+timebase. If the period of the waveform is known, a time should be included here that allows 
+for an appropriate trace to be recorded. The actual duration over which the trace is recorded 
+is given by <code>obs_duration</code> which in this case is 3 times the waveform duration. These numbers 
+should be adjusted depending on the waveform observed to avoid aliasing of the signal.</p>
+<p>The <code>sampling_interval</code> ensures 4096 samples are taken within the observation window, this 
+divisor may be changed depending on the number of samples required.</p>
+<h3 id="specify-and-configure-channels-to-be-read-out"><strong>Specify and configure channels to be read out</strong></h3>
+<p>The channels must be set up using <code>setChannel</code>, with their sampling voltage range, in the case 
+below it is 10V. The <code>setChannel</code> command will chose the next largest amplitude.
+Then the trigger is set using <code>setSimpleTrigger()</code>, in this case on the falling edge of channel A.
+To collect data from the picoscope, a function called <code>runBlock()</code> is used. Then the data can be 
+collected using <code>getDataV()</code>.</p>
+<p>To take data from two channels, called A and B, the following code can be run:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">ps</span><span class="o">.</span><span class="n">setChannel</span><span class="p">(</span><span class="s1">'A'</span><span class="p">,</span> <span class="s1">'DC'</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">enabled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">BWLimited</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">ps</span><span class="o">.</span><span class="n">setChannel</span><span class="p">(</span><span class="s1">'B'</span><span class="p">,</span> <span class="s1">'DC'</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">enabled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">BWLimited</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>setChannel()</code> takes the following arguments:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">setChannel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="o">=</span><span class="s1">'A'</span><span class="p">,</span> <span class="n">coupling</span><span class="o">=</span><span class="s1">'AC'</span><span class="p">,</span> <span class="n">VRange</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">VOffset</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">enabled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">BWLimited</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">probeAttenuation</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span><span class="o">.</span> 
+</span></code></pre></div>
+<p>where the voltage range is set in the example above. This should be chosen based on the signal that you are viewing.</p>
+<h3 id="set-up-trigger"><strong>Set up trigger</strong></h3>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">ps</span><span class="o">.</span><span class="n">setSimpleTrigger</span><span class="p">(</span><span class="s1">'A'</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s1">'Falling'</span><span class="p">,</span> <span class="n">timeout_ms</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">enabled</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+</span></code></pre></div>
+<p>The trigger function takes the following arguments:
+</p><div class="language-py highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">setSimpleTrigger</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trigSrc</span><span class="p">,</span> <span class="n">threshold_V</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s1">'Rising'</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">timeout_ms</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">enabled</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Where the channel the scope triggers on and which edge can be chosen.</p>
+<h3 id="run-the-acquisition-and-wait-for-ready"><strong>Run the acquisition and wait for ready</strong></h3>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">ps</span><span class="o">.</span><span class="n">runBlock</span><span class="p">()</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">ps</span><span class="o">.</span><span class="n">waitReady</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="readout-data-and-make-time-array"><strong>Readout data and make time array</strong></h3>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">dataA</span> <span class="o">=</span> <span class="n">ps</span><span class="o">.</span><span class="n">getDataV</span><span class="p">(</span><span class="s1">'A'</span><span class="p">,</span> <span class="n">nSamples</span><span class="p">,</span> <span class="n">returnOverflow</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>     <span class="c1">#collecting data for both channels </span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">dataB</span> <span class="o">=</span> <span class="n">ps</span><span class="o">.</span><span class="n">getDataV</span><span class="p">(</span><span class="s1">'B'</span><span class="p">,</span> <span class="n">nSamples</span><span class="p">,</span> <span class="n">returnOverflow</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
+<p>dataTimeAxis = np.arange(nSamples) * actualSamplingInterval</p>
+<p>Record a data set and then plot using dataTimeAxis as your time axis, check that the plot returns the expected trace.</p>
+<h3 id="stop-and-close-connection-when-finished"><strong>Stop and close connection when finished</strong></h3>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">ps</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">ps</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="summary-of-some-useful-picoscope-python-commands"><strong>Summary of some useful Picoscope Python commands</strong></h3>
+<p>Below is a table that provides commands that may be send to the PicoScope and what is returned:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Returned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>setChannel(self, channel=‘A’, coupling=‘AC’, VRange=2.0, VOffset=0.0, enabled=True, BWLimited=0, probeAttenuation=1.0)</td>
+<td>This sets up a channel on the Scope</td>
+</tr>
+<tr>
+<td>setSimpleTrigger(self, trigSrc, threshold_V=0, direction=‘Rising’, delay=0, timeout_ms=100, enabled=True)</td>
+<td>This triggers the Scope on a certain channel</td>
+</tr>
+<tr>
+<td>runBlock(self, pretrig=0.0, segmentIndex=0)</td>
+<td>Runs a block read of data</td>
+</tr>
+<tr>
+<td>setSamplingInterval(self, sampleInterval, duration, oversample=0, segmentIndex=0)</td>
+<td>actualSampleInterval, noSamples, maxSamples)</td>
+</tr>
+<tr>
+<td>waitReady(self, spin_delay=0.01)</td>
+<td>waits until the scope is ready to collect data</td>
+</tr>
+<tr>
+<td>getDataV(self, channel, numSamples=0, startIndex=0, downSampleRatio=1, downSampleMode=0, segmentIndex=0, returnOverflow=False, exceptOverflow=False, dataV=None, dataRaw=None, dtype=<class ’numpy.float64’>)</class></td>
+<td>Return the data as an array of voltage values. It returns (dataV, overflow) if returnOverflow = True, else, it returns dataV. dataV is an array with size numSamplesReturned</td>
+</tr>
+<tr>
+<td>getDataRaw(self, channel=‘A’, numSamples=0, startIndex=0, downSampleRatio=1, downSampleMode=0, segmentIndex=0, data=None)</td>
+<td>Returns a tuple containing: (data, numSamplesReturned, overflow)</td>
+</tr>
+<tr>
+<td>getAllUnitInfo(self)</td>
+<td>Human readable unit information as a string</td>
+</tr>
+</tbody>
+</table></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 UCD School of Physics
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

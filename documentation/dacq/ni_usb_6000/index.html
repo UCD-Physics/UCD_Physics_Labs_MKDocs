@@ -1,0 +1,1593 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://physicslabs.ucd.ie/documentation/dacq/ni_usb_6000/">
+      
+      
+        <link rel="prev" href="../data_aq_tips/">
+      
+      
+        <link rel="next" href="../rbd_1903/">
+      
+      
+      <link rel="icon" href="../../../imgs/UCD_logo_transparency_favicon_small.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+    
+    
+      
+        <title>National Instruments USB 6008/6009 - UCD Physics Labs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#national-instruments-usb-60086009" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="UCD Physics Labs" class="md-header__button md-logo" aria-label="UCD Physics Labs" data-md-component="logo">
+      
+  <img src="../../../imgs/UCD_logo_transparency.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            UCD Physics Labs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              National Instruments USB 6008/6009
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="UCD Physics Labs" class="md-nav__button md-logo" aria-label="UCD Physics Labs" data-md-component="logo">
+      
+  <img src="../../../imgs/UCD_logo_transparency.png" alt="logo">
+
+    </a>
+    UCD Physics Labs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Information
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/beech_hill/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Beech Hill
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/stage_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stage 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/stage_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stage 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/d_and_r/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dignity and Respect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../information/safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/get_python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Get Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/coding_guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coding Guidelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python_how_tos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python How Tos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DACQ
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            DACQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dacq_main/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DACQ Main Page
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dacq_concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DACQ General Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_aq_tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Aquisition Hints and Tips
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    NI USB-6008/6009
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    NI USB-6008/6009
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usb-6008-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB 6008 Specifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usb-6008-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB-6008 Connections
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming-the-usb-6008" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the USB-6008
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming the USB-6008">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programming-the-adc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the ADC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming the ADC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-channels-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Channels &amp; Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-read-out-a-single-voltage-from-a-single-channel" class="md-nav__link">
+    <span class="md-ellipsis">
+      To read out a single voltage from a single channel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-read-out-multiple-channels-andor-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      To read out multiple channels and/or samples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-the-dac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the DAC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-the-digital-io-ports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the Digital I/O Ports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-the-digital-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the Digital Counter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rbd_1903/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RBD 9103 Picoammeter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fresnel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fresnel Diffraction using Ultrasound
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teensy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teensy Pulse Generator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ieee-488/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IEEE-488
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Falstad_circuit_sim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Falstad Circuit simulator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../report_writing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Report Writing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usb-6008-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB 6008 Specifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usb-6008-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB-6008 Connections
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming-the-usb-6008" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the USB-6008
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming the USB-6008">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programming-the-adc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the ADC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming the ADC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-channels-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Channels &amp; Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-read-out-a-single-voltage-from-a-single-channel" class="md-nav__link">
+    <span class="md-ellipsis">
+      To read out a single voltage from a single channel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-read-out-multiple-channels-andor-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      To read out multiple channels and/or samples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-the-dac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the DAC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-the-digital-io-ports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the Digital I/O Ports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-the-digital-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the Digital Counter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="national-instruments-usb-60086009"><strong>National Instruments USB-6008/6009</strong></h1>
+<p>Learn how to control the National Instruments multi-function USB-6008 module from Python.</p>
+<p><img alt="NIUSB-6008" src="/imgs/NI_USB6008.png" style="height:450px;width:450px"></p>
+<p>Figure: NI USB 6008</p>
+<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>The <a href="https://www.ni.com/en-ie/support/model.usb-6008.html">National Instruments USB-6008</a> 
+is a multi-function USB Data Acquisition device. There is also a higher-performance version, 
+the <a href="https://www.ni.com/en-ie/support/model.usb-6009.html">USB-6009</a>, of which there are a 
+couple in the APL, but they are identical to program.</p>
+<p>The USB-6008/6009 each have:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADC</td>
+<td>8 channels (single-ended), 4 channels (differential)</td>
+</tr>
+<tr>
+<td>DAC</td>
+<td>2 channels</td>
+</tr>
+<tr>
+<td>Digital I/O</td>
+<td>12 lines</td>
+</tr>
+<tr>
+<td>Digital Counter</td>
+<td>1 line</td>
+</tr>
+</tbody>
+</table>
+<p>When an ADC channel is operated in <strong>single-ended mode</strong>, a single line is used to measure the voltage w.r.t. ground.</p>
+<p>When an ADC channel is operated in <strong>differential mode</strong>, two lines are used to measure the voltage difference 
+between them (neither need be at ground) - hence only half of the number of channels are avaiable. 
+The resolution and ranges are better in differential than in single-ended mode and, 
+<strong>in general, you should use differential mode</strong>, unless more than 4 channels are needed.</p>
+<p>The table below describes the Analogue Input (AI) differences of the two modules:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>NI USB-6008</th>
+<th>NI USB-6009</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI</td>
+<td>12 bits differential, 11 bits single-ended</td>
+<td>14 bits differential, 13 bits single-ended</td>
+</tr>
+<tr>
+<td>Max AI sample rate (single channel)</td>
+<td>10 kS/s</td>
+<td>48 kS/s</td>
+</tr>
+<tr>
+<td>Max AI sample rate (multiple channels, aggregate)</td>
+<td>10 kS/s</td>
+<td>48 kS/s</td>
+</tr>
+</tbody>
+</table>
+<p>There are also difference in the Digital I/O, but this is not a concern in the APL.</p>
+<h2 id="usb-6008-specifications"><strong>USB 6008 Specifications</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Specifcation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADC</td>
+<td>8 × 11-bit single-ended mode - range ±10 V <br> 4 × 12-bit differential mode - ranges: ± 20V<em> , ±10V, ±5 V, ±4 V, ±2.5 V, ±2 V, ±1.25 V, ±1 V. (</em> both AI+ and AI- must be within ±10V of ground). A built-in amplifier matches signal ADC range - specify in software</td>
+</tr>
+<tr>
+<td>DAC</td>
+<td>2 × 12-bit, 0-5V range, 150 Hz max. (software timed )</td>
+</tr>
+<tr>
+<td>Digital I/O</td>
+<td>P0 &lt;0..7&gt; 8 Digital Lines <br> P1 &lt;0..3&gt; 4 Digital Lines <br> P0 and P1 programmables independently as inputs or outputs, or together</td>
+</tr>
+<tr>
+<td>Digital Counter</td>
+<td>1 × 32-bit, count up on falling edge. <br>Max. freq.: 5 MHz, <br> Min. pulse hi/lo: 100 ns,  <br> Hi: &gt;2.0V, Lo&lt;0.8V</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usb-6008-connections"><strong>USB-6008 Connections</strong></h2>
+<p>The connections to the USB-6008 are made via screw terminals with a map of the connections shown in the figure below. 
+The analogue connections are on one side while the digital are on the other. Several ground terminals are available
+in the diagram.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI</td>
+<td>Analogue Input, i.e. ADC</td>
+</tr>
+<tr>
+<td>AO</td>
+<td>Analoge Output, i.e. DAC</td>
+</tr>
+<tr>
+<td>PF</td>
+<td>Digital Counter</td>
+</tr>
+<tr>
+<td>P0/P1</td>
+<td>Digital I/O Line</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>Ground</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="NI connections" src="/imgs/NI_USB6008_connections.png" style="height:450px;width:450px"></p>
+<p>Figure: NI USB-6008/6009 Connections</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that the figure shows both single-ended and differential connections for the ADCs. So, for example, 
+connections 2 and 3 can be either AI 0 and AI 4 (in single-ended mode) or work together as a single differential 
+channel (AI 0+ and AI 0-).</p>
+</div>
+<h2 id="programming-the-usb-6008"><strong>Programming the USB-6008</strong></h2>
+<p>To communicate with the NI USB-6008 module we use a Python library called PyDAQmx_Helper, which was developed in 
+the UCD School of Physics.</p>
+<p>This library needs other libraries installed (NIDAQmx from National Instruments and PyDAQmx which calls the 
+NIDAQmx C-based interface.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All communication with the NI USB-6008 will utilise the the PyDAQmx_Helper library and you will never need 
+to interact directly with the NIDAQmx or PyDAQmx libraries!</p>
+</div>
+<p>NIDAQmx, PyDAQmx and PyDAQmx_Helper are installed on all the APL computers that interface with experiments. 
+If you have a problem please contact a member of staff or a demonstrator.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not install the NIDAQmx/PyDAQmx software on your own computer - use the computers provided for interfacing!</p>
+</div>
+<h3 id="programming-the-adc"><strong>Programming the ADC</strong></h3>
+<h4 id="setting-up"><strong>Setting up</strong></h4>
+<p>To communicate with the ADC Channels on the USB-6008 you must use the PyDAQmx_Helper ADC class. There are two ways 
+to read out the voltages, depending on whether you just want to read a single voltage at a time from one channel, 
+or want to sample voltages from one or more channels. The first three steps are the same in either case:</p>
+<ul>
+<li>
+<p>import the ADC class
+    </p><div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydaqmx_helper.adc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ADC</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>make an instance of the ADC class
+    </p><div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">myADC</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">()</span>
+</span></code></pre></div>
+</li>
+<li>add channels, and optionally specify mode and range, e.g. to add just channel 0:
+    <div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">myADC</span><span class="o">.</span><span class="n">addChannels</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span>
+</span></code></pre></div></li>
+</ul>
+<p>For options to ADC addChannels() see below.</p>
+<h4 id="adding-channels-options"><strong>Adding Channels &amp; Options</strong></h4>
+<p>The ADC method:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">ADC</span><span class="o">.</span><span class="n">addChannels</span><span class="p">()</span>
+</span></code></pre></div>
+<p>takes four arguments, three of which are optional and default to the values shown:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">ADC</span><span class="o">.</span><span class="n">addChannels</span><span class="p">(</span><span class="n">newChannels</span><span class="p">,</span> 
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                <span class="n">ADC_mode</span><span class="o">=</span><span class="s2">"DAQmx_Val_Diff"</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>                <span class="n">minRange</span><span class="o">=-</span><span class="mf">10.0</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>                <span class="n">maxRange</span><span class="o">=</span><span class="mf">10.0</span> <span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li><code>'newChannels'</code> is a list of channel ids to be added</li>
+<li><code>'ADC_mode'</code> is either <code>'"DAQmx_Val_Diff"'</code> for differential mode (default) or <code>'"DAQmx_Val_RSE"'</code> for single-ended mode</li>
+<li><code>'minRange'</code> and <code>'maxRange'</code> should be specified to most closely match the range of the signal you are measuring.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you are measuring a small voltage can lose resolution by not specifying the range since the defaults are ±10 V - 
+make sure to specify the correct range!</p>
+</div>
+<p>Note: there is also an ADC method</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">ADC</span><span class="o">.</span><span class="n">getActiveChannels</span><span class="p">()</span>
+</span></code></pre></div>
+<p>which returns a list of the channels that have been added.</p>
+<h4 id="to-read-out-a-single-voltage-from-a-single-channel"><strong>To read out a single voltage from a single channel</strong></h4>
+<p>To reaout the voltage once when only a single channel is connected use the ADC method:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">ADC</span><span class="o">.</span><span class="n">readVoltage</span><span class="p">()</span>
+</span></code></pre></div>
+<p>which returns the voltage as a floating-point number.</p>
+<p>Here is a complete code snippet to read out and print the voltage on channel 0:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydaqmx_helper.adc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ADC</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">myADC</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">()</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">myADC</span><span class="o">.</span><span class="n">addChannels</span><span class="p">([</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">val</span> <span class="o">=</span> <span class="n">myADC</span><span class="o">.</span><span class="n">readVoltage</span><span class="p">()</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="to-read-out-multiple-channels-andor-samples"><strong>To read out multiple channels and/or samples</strong></h4>
+<p>If you want to read out more than one channel, or have the USB-6008 sample voltages at some sample 
+rate (i.e. automatically read the voltages at a specified rate) then you must use</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">samples</span> <span class="o">=</span> <span class="n">sampleVoltages</span><span class="p">(</span><span class="n">nPointsPerChannel</span><span class="p">,</span> <span class="n">sampleRate</span><span class="p">)</span>
+</span></code></pre></div>
+<p>where the total number of samples per channel and the sample rate can be specificed 
+(both default to 1 if not given). Recall that the USB-6008 has a maximum sample rate of 10 kS/s 
+for all channels combined.</p>
+<p><code>ADC.sampleVoltages()</code> returns a dictionary where the keys are the channel ids and the values are the samples (as tuples):</p>
+<p><img alt="Sample Voltages Breakdown" src="/imgs/samplevoltages.png"></p>
+<p>Figure: dictionary returned by sampleVoltages</p>
+<p>Recall that the values are accessed using <code>dict[key]</code> and that tuples are immutable sequences.</p>
+<p>Example: To to record 100 samples per channel at 200 Hz for channels 0 and 2, in differential mode (default), range = ±5V</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydaqmx_helper.adc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ADC</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">myADC</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">()</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">myADC</span><span class="o">.</span><span class="n">addChannels</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">minRange</span><span class="o">=-</span><span class="mi">5</span><span class="p">,</span> <span class="n">maxRange</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">data</span> <span class="o">=</span> <span class="n">myADC</span><span class="o">.</span><span class="n">sampleVoltages</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">samples0</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># tuple of samples associated with channel with id 0</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="n">samples2</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># tuple of samples associated with channel with id 2</span>
+</span></code></pre></div>
+<h3 id="programming-the-dac"><strong>Programming the DAC</strong></h3>
+<p>The USB-6008 has two independent DAC channels. They are programmed from Python as follows:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">Import</span> <span class="n">the</span> <span class="n">DAC</span> <span class="k">class</span><span class="w"> </span><span class="nc">from</span> <span class="n">pydaqmx_helper</span><span class="o">.</span><span class="n">dac</span><span class="p">:</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydaqmx_helper.dac</span><span class="w"> </span><span class="kn">import</span> <span class="n">DAC</span>
+</span></code></pre></div>
+<p>Make an instance of the DAC class, specifying which channel (0 or 1) to use, e.g. to use channel 0:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">myDAC</span> <span class="o">=</span> <span class="n">DAC</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Write the voltage to it, e.g. to produce an output voltage of 2.62 V:</p>
+<p><code>myDAC.writeVoltage(2.62)</code></p>
+<p>The DAC class works differently to the ADC class: with the ADC class you make one instance of the class and add the channels, with the DAC class you specify the channel when an instance is created. If you want to use both DAC channels you need to make two instances of the class!</p>
+<h3 id="programming-the-digital-io-ports"><strong>Programming the Digital I/O Ports</strong></h3>
+<p>The USB 6008 has an 8-bit port I/O (P0) and a 4-bit I/O port (P1) that can be used individually or together as a single 12-bit port.</p>
+<p>Usage:
+</p><div class="language-py highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">Import</span> <span class="n">the</span> <span class="n">Digital_IO</span> <span class="k">class</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="nc">from</span> <span class="n">pydaqmx_helper</span><span class="o">.</span><span class="n">digital_io</span> <span class="kn">import</span><span class="w"> </span><span class="nn">Digital_IO</span>
+</span></code></pre></div>
+Make an instance of the class. The Digital_IO class takes two (optional) arguments specifying the port and direction:
+<ul>
+<li>Options for port are: ‘0’ for P0, ‘1’ for P1 or ‘0:1’ for both combined (default)</li>
+<li>Options for direction are ‘input’ or ‘output’ (default). e.g.</li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">myDigital_IO</span> <span class="o">=</span> <span class="n">Digital_IO</span><span class="p">()</span>   <span class="c1"># use defaults</span>
+</span></code></pre></div>
+<p>or</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">myDigital_IO</span> <span class="o">=</span> <span class="n">Digital_IO</span><span class="p">(</span><span class="s1">'0'</span> <span class="s1">'input'</span><span class="p">)</span>  <span class="c1"># P0 set up for output</span>
+</span></code></pre></div>
+<p>If the port is set as an input then you can read from it using <code>read()</code>:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">val</span> <span class="o">=</span> <span class="n">myDigital_IO</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> 
+</span></code></pre></div>
+<p>If the port is set as an output then you can write a value to it using write(val), 
+which returns a string representaiton of the binary numbers written out:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">ans</span> <span class="o">=</span> <span class="n">myDigital_IO</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>  <span class="c1"># write out binary 11111111: returns `0b11111111`</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is the low bits of val that get written to the port.</p>
+</div>
+<h3 id="programming-the-digital-counter"><strong>Programming the Digital Counter</strong></h3>
+<p>The 32-bit counter (pin PFI0) counts on the falling edge of a digital pulse.</p>
+<p>Usage:</p>
+<ul>
+<li>Import the counter class:</li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydaqmx_helper.counter</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
+</span></code></pre></div>
+<ul>
+<li>Make an instance of the counter class:</li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">myCounter</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">()</span>
+</span></code></pre></div>
+<ul>
+<li>When ready, start counting:</li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">myCounter</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span></code></pre></div>
+<ul>
+<li>Read out the number of counts at any time with:</li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">val</span> <span class="o">=</span> <span class="n">myCounter</span><span class="o">.</span><span class="n">getCount</span><span class="p">()</span>
+</span></code></pre></div>
+<ul>
+<li>Read, stop and reset with:</li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">val</span> <span class="o">=</span> <span class="n">myCounter</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>start() re-starts counting from 0.</p>
+</div>
+<p>The Python <code>time.sleep()</code> function is useful to use with the counter.</p></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 UCD School of Physics
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
