@@ -1524,7 +1524,7 @@ of ns, configurable via software. It is implemented using a
 <a href="https://www.pjrc.com/store/teensy40.html">Teensy 4.0 Microcontoller</a> programmed 
 in Arduino/C and is communicated with via serial over USB. This page contains some details on how 
 to use the generator.</p>
-<p><img alt="Teensey Pulse Generator internals" src="/imgs/PG_inside.png" style="height:500px;width:450px"></p>
+<p><img alt="Teensey Pulse Generator internals" src="../../../imgs/PG_inside.png" style="height:500px;width:450px"></p>
 <h2 id="firmware"><strong>Firmware</strong></h2>
 <p>The source code for the Teensy is <a href="https://github.com/UCD-Physics/Teensy-Pulse-Generator/">available on github.</a></p>
 <h2 id="connections"><strong>Connections</strong></h2>
@@ -1543,7 +1543,7 @@ system then you must use a TTL-to-NIM converter module.</p>
 <li>pulseWidth: 100 (ns)</li>
 </ul>
 <p>is shown in the image below:</p>
-<p><img alt="Example pulses" src="/imgs/PG_example_pulses.png"></p>
+<p><img alt="Example pulses" src="../../../imgs/PG_example_pulses.png"></p>
 <h2 id="serial-communication"><strong>Serial Communication</strong></h2>
 <p>The device is controlled over a USB serial line from a PC that can be communicated with using a terminal 
 program (such as <a href="https://www.compuphase.com/software_termite.htm">Termite</a>), or using PySerial in Python</p>
@@ -1591,7 +1591,7 @@ leading-edge times you must take account of this.</p>
 looking for <em>FT232R USB UART</em> in Windows (7) <em>Devices and Printers</em>, double click on it and 
 select <em>Hardware</em> and we see the COM port (COM3 when I tested this one). If you are having 
 problems I recommend this as a fallback to see what the device is doing.</p>
-<p>Alternatively: use pyserial (see <a href="link_to_lower_down">Python section</a> below):</p>
+<p>Alternatively: use pyserial:</p>
 <p>PySerial has a useful command which lists active com ports (from Python):</p>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">serial.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">list_ports</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">list_ports</span><span class="o">.</span><span class="n">comports</span><span class="p">():</span>

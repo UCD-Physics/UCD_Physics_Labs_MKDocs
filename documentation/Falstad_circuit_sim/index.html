@@ -1246,7 +1246,7 @@ circuit design package but the behaviour of a non-specific version of the compon
 <h2 id="the-home-screen">The home screen</h2>
 <p>Falstad will typically load with an oscillator circuit already running in simulation. Simply use "File" followed by "blank 
 circuit" to clear it.</p>
-<p><img alt="Falstad_home" src="/imgs/falstad_home.png"></p>
+<p><img alt="Falstad_home" src="../../imgs/falstad_home.png"></p>
 <p>Figure: Falstad blank home window</p>
 <p>Some of the controls are self-explanatory. For additional clarification, Simulation speed controlls how fast new 
 data is generated and displayed within the simulation. Current speed independently changes only the animation speed 
@@ -1255,49 +1255,49 @@ of the electrical current pixels which itself still operates within the confines
 <p>Assembling your circuit schematic is fairly intuitive. To place a component on the canvas select it drom the "Draw" menu. 
 There are some basic options such as resistors or capacitors which have keyboard shortcuts. Most other components can be 
 found in categories one would expect such as an AC source would be found in "Inputs and sources".</p>
-<p><img alt="Falstad_draw" src="/imgs/falstad_draw.png"></p>
+<p><img alt="Falstad_draw" src="../../imgs/falstad_draw.png"></p>
 <p>Figure: Falstad draw menu</p>
 <p>Clicking and dragging will stretch the component between two connection nodes. The component generally doesn’t change size, 
 only the wires at the end change in length so there is a minimum length requirement.</p>
-<p><img alt="Falstad_components" src="/imgs/falstad_components.png"></p>
+<p><img alt="Falstad_components" src="../../imgs/falstad_components.png"></p>
 <p>Figure: Falstad draw menu</p>
 <p>You can use “Draw -&gt; Wire” or just press the “w” key to draw basic wires.</p>
 <div class="admonition warning">
 <p class="admonition-title">Nodes in Falstad</p>
 <p>Falstad only accepts node-to-node connections, meaning that connecting a wire to any point between two nodes will be 
 marked with a red dot as invalid. Invalid nodes will count as disconnectedin the simulation.</p>
-<p><img alt="Falstad_node" src="/imgs/falstad_node.png" style="height:314px;width:354px"></p>
+<p><img alt="Falstad_node" src="../../imgs/falstad_node.png" style="height:314px;width:354px"></p>
 <p>Figure: Falstad invalid node</p>
 </div>
 <h2 id="configuring-components">Configuring components</h2>
 <p>To configure a placed component such as an AC source, double click on it whereupon you can change its basic properties.</p>
-<p><img alt="Falstad_config" src="/imgs/falstad_configure.png"></p>
+<p><img alt="Falstad_config" src="../../imgs/falstad_configure.png"></p>
 <p>Figure: Configuration menu for an AC source.</p>
 <h2 id="measuring-voltages-across-components">Measuring voltages across components</h2>
 <p>To monitor the Voltage across a specific component over time, right click on that component and select “View in new scope” 
 to add a real-time simulated oscilloscope probe across that component.</p>
-<p><img alt="Falstad_new_scope" src="/imgs/falstad_new_scope.png"></p>
+<p><img alt="Falstad_new_scope" src="../../imgs/falstad_new_scope.png"></p>
 <p>Figure: Right click menu to add voltage trace to new scope display.</p>
 <p>The “Add to existing scope” option will present a sub-menu which lets you pick which scope display you want to add the new 
 voltage trace to.</p>
-<p><img alt="Falstad_existing_scope" src="/imgs/falstad_existing_scope.png"></p>
+<p><img alt="Falstad_existing_scope" src="../../imgs/falstad_existing_scope.png"></p>
 <p>Figure: Adding to an existing scope can allow us to compare two signals more easily.</p>
 <h2 id="exporting-data-for-post-processing">Exporting data for post-processing</h2>
 <p>To export data, you need to insert export points in the same place that you would put an oscilloscope probe.</p>
-<p><img alt="Falstad_export_terminal" src="/imgs/falstad_export_terminal.png"></p>
+<p><img alt="Falstad_export_terminal" src="../../imgs/falstad_export_terminal.png"></p>
 <p>Figure: Adding export terminals to the circuit to export data.</p>
 <p>When the export terminal has been placed it should resemble the image below. Note the node warning above applies here.</p>
-<p><img alt="Falstad_single_export" src="/imgs/falstad_single_export.png"></p>
+<p><img alt="Falstad_single_export" src="../../imgs/falstad_single_export.png"></p>
 <p>Figure: Example of a single export terminal placed onto a node before a resistor.</p>
 <p>Remember that the voltage data on the export pin is the voltage value at that point in the circuit relative to ground. 
 If you want to measure the voltage across a component whereupon the other side of the component isn’t connected to ground, 
 you will need to add another export point and subtract the data accordingly.</p>
-<p><img alt="Falstad_double_export" src="/imgs/falstad_double_export.png"></p>
+<p><img alt="Falstad_double_export" src="../../imgs/falstad_double_export.png"></p>
 <p>Figure: Example of two export terminals placed so as to be able to work out the voltage drop across R1 (upper).</p>
 <p>You need to run the simulation for a while before exporting or the files will be empty. To download the file, double left 
 click on the export point and then click the hyperlinked file name. You may need to adjust the number of points a little 
 to get the amount of data you want. I recommend renaming each file to something useful as you download them.</p>
-<p><img alt="Falstad_menu" src="/imgs/falstad_menu.png"></p>
+<p><img alt="Falstad_menu" src="../../imgs/falstad_menu.png"></p>
 <p>Figure: Export menu for a single data export terminal.</p>
 <p>It is not made clear how long you need to wait to generate the desired number of data points but maxing out the sim speed 
 for that task might be a reasonable way to make that wait time as short as possible.</p></div>

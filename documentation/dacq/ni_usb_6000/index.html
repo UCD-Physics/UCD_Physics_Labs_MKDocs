@@ -1420,7 +1420,7 @@
 
 <div><h1 id="national-instruments-usb-60086009"><strong>National Instruments USB-6008/6009</strong></h1>
 <p>Learn how to control the National Instruments multi-function USB-6008 module from Python.</p>
-<p><img alt="NIUSB-6008" src="/imgs/NI_USB6008.png" style="height:450px;width:450px"></p>
+<p><img alt="NIUSB-6008" src="../../../imgs/NI_USB6008.png" style="height:450px;width:450px"></p>
 <p>Figure: NI USB 6008</p>
 <h2 id="introduction"><strong>Introduction</strong></h2>
 <p>The <a href="https://www.ni.com/en-ie/support/model.usb-6008.html">National Instruments USB-6008</a> 
@@ -1548,7 +1548,7 @@ in the diagram.</p>
 </tr>
 </tbody>
 </table>
-<p><img alt="NI connections" src="/imgs/NI_USB6008_connections.png" style="height:450px;width:450px"></p>
+<p><img alt="NI connections" src="../../../imgs/NI_USB6008_connections.png" style="height:450px;width:450px"></p>
 <p>Figure: NI USB-6008/6009 Connections</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1639,7 +1639,7 @@ rate (i.e. automatically read the voltages at a specified rate) then you must us
 (both default to 1 if not given). Recall that the USB-6008 has a maximum sample rate of 10 kS/s 
 for all channels combined.</p>
 <p><code>ADC.sampleVoltages()</code> returns a dictionary where the keys are the channel ids and the values are the samples (as tuples):</p>
-<p><img alt="Sample Voltages Breakdown" src="/imgs/samplevoltages.png"></p>
+<p><img alt="Sample Voltages Breakdown" src="../../../imgs/samplevoltages.png"></p>
 <p>Figure: dictionary returned by sampleVoltages</p>
 <p>Recall that the values are accessed using <code>dict[key]</code> and that tuples are immutable sequences.</p>
 <p>Example: To to record 100 samples per channel at 200 Hz for channels 0 and 2, in differential mode (default), range = ±5V</p>

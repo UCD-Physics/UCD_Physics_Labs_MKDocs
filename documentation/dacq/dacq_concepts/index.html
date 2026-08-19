@@ -1265,7 +1265,7 @@
 <div><h1 id="data-acquistion-general-concepts">Data Acquistion General Concepts</h1>
 <p>Get up-to-speed on general data acquisition concepts.</p>
 <h2 id="analogue-and-digital">Analogue and Digital</h2>
-<p><img alt="Analogue vs Digital" src="/imgs/Analogue-vs-Digital.png"></p>
+<p><img alt="Analogue vs Digital" src="../../../imgs/Analogue-vs-Digital.png"></p>
 <p>Figure: Analogue -vs- Digital - caption</p>
 <p>Computers are digital systems and and at he most basic level store information as sequences of bits 
 (electronic states representing a 0 or 1, for more information on voltages and logic levels see 
@@ -1275,9 +1275,9 @@ thus restricted to finite range of values. Similarly, computer memory is finite 
 of digital values which can be stored. Thus, 
 <strong>a signal stored on a computer is discrete in both value (amplitide) and time</strong>, 
 as illustrated in the two figures below:</p>
-<p><img alt="Sine function" src="/imgs/sine.png"></p>
+<p><img alt="Sine function" src="../../../imgs/sine.png"></p>
 <p>Figure: Sine function</p>
-<p><img alt="Digitized Sine function" src="/imgs/sine_dig.png"></p>
+<p><img alt="Digitized Sine function" src="../../../imgs/sine_dig.png"></p>
 <p>Figure: Digitised version of above sine function</p>
 <p>In the real world, analogue signals are continuous in both time and amplitude, and interfacing with a computer involves conversion between the digital and analogue domains. This ultimately involves either or both of:</p>
 <ul>
@@ -1300,7 +1300,7 @@ grouped together to store information (a collection of 8 bits is called a ‘byt
 <p>For example, consider a byte consisting of 8 bits as shown below. Each bit has a weight based on its position; the 
 lowest weight (“least significant bit”) is on the right and the weights double with each place to the left since each 
 position can have two possibilities (a 1 or 0). The number of possible values is given by 28=256 (0 to 255)</p>
-<p><img alt="Binary conversion" src="/imgs/binary.png"></p>
+<p><img alt="Binary conversion" src="../../../imgs/binary.png"></p>
 <p>Figure: Binary Numbers</p>
 <h2 id="binary-in-python">Binary in Python</h2>
 <p>Please see this guide on <a href="https://www.askpython.com/python/examples/binary-numbers-operations">binary numbers</a> in Python.</p>
@@ -1309,13 +1309,13 @@ position can have two possibilities (a 1 or 0). The number of possible values is
 of the ADC or DAC determines the resolution. For example, an 8-bit ADC with a range of 5V has a resolution of ~0.0195V 
 (5V/256) while a 12-bit ADC with a range of 5V has a resolution of 0.0012V (5V/4096). The affect of the number of bits 
 on the amplitude resolution can be seen in the figures below:</p>
-<p><img alt="Sine function" src="/imgs/sine.png"></p>
+<p><img alt="Sine function" src="../../../imgs/sine.png"></p>
 <p>Figure: Sine function</p>
-<p><img alt="Sine function 2 bit" src="/imgs/dig_2.png"></p>
+<p><img alt="Sine function 2 bit" src="../../../imgs/dig_2.png"></p>
 <p>Figure: Digitised Sine function (2-bit ADC - 4 levels)</p>
-<p><img alt="Sine function 4 bit" src="/imgs/dig_4.png"></p>
+<p><img alt="Sine function 4 bit" src="../../../imgs/dig_4.png"></p>
 <p>Figure: Digitised Sine function (4-bit ADC - 16 levels</p>
-<p><img alt="Sine function 6 bit" src="/imgs/dig_6.png"></p>
+<p><img alt="Sine function 6 bit" src="../../../imgs/dig_6.png"></p>
 <p>Figure: Digitised Sine function (6-bit ADC - 64 levels)</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -1327,12 +1327,12 @@ The process of digisiting a signal as discrete intervals is known as <strong>sam
 digitised signals and it is critical to understand the basics of sampling theory.</p>
 <p>How many samples are needed to adequately describe a signal? The animation below illustrates what happens when a signal 
 is sampled at different rates (note in the caption ‘f’ is the frequency of the signal and ‘fs’ is the sampling frequency):</p>
-<p><div class="video-container"><video style="position:relative;width:100%;height:22.172vw" controls alt="type:video"><source src="/videos/sampling.mp4" type="video/mp4"></source></video></div></p>
+<p><div class="video-container"><video style="position:relative;width:100%;height:22.172vw" controls alt="type:video"><source src="../../../videos/sampling.mp4" type="video/mp4"></source></video></div></p>
 <p>As can be seen signals of the wrong frequencies appear (aliasing) when the sample rate drops to less than twice the 
 frequency of the signal.</p>
-<p><img alt="Sampling at 1.8f" src="/imgs/alias_022.png"></p>
+<p><img alt="Sampling at 1.8f" src="../../../imgs/alias_022.png"></p>
 <p>Figure: Sampling at f<sub>s</sub> = 1.8 f</p>
-<p><img alt="Sampling at 0.95f" src="/imgs/alias_025.png"></p>
+<p><img alt="Sampling at 0.95f" src="../../../imgs/alias_025.png"></p>
 <p>Figure: Sampling at f<sub>s</sub> = 0.95 f</p>
 <h2 id="the-nyquist-sampling-criterion">The Nyquist Sampling Criterion</h2>
 <p>The <a href="https://en.wikipedia.org/wiki/Nyquist%e2%80%93Shannon_sampling_theorem">Nyquist Sampling Theorem</a> states that to 
