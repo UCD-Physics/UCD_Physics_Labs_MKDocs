@@ -109,7 +109,9 @@ The hard deadlines for submission of laboratory reports are:
 
 *Theoretical Physics*:
 
+- Report 1 due by 5pm on Monday 5 October 2026
 - Report 2 due by 5pm on Monday 9 November 2026
+- Report 3 due by 5pm on Monday 15 February 2027
 - Report 4 due by 5pm on Tuesday 30 March 2027
 	
 - - -

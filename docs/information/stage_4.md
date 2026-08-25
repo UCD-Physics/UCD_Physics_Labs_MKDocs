@@ -66,9 +66,10 @@ The hard deadlines for submission of laboratory reports are:
 
 - Report 2 due by 5pm on Monday 9 November 2026
 or
-- Report 2 due by 5pm on Tuesday 30 March 2026
+- Report 2 due by 5pm on Tuesday 30 March 2027
 
 - - -
+
 
 ## Late Submission of Laboratory Reports
 
