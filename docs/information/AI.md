@@ -1,13 +1,13 @@
 ---
 title: AI
-summary: Permitted use of AI in the lab.
+summary: Permitted use of AI in the labs
 authors:
     - John Quinn
     - Luis Leon Vintro
 date: 2026-08-25
 ---
 
-# AI
+# Permitted use of AI in the labs
 
 Students may use generative AI tools for limited support in this module.
 
