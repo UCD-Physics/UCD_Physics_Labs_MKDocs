@@ -13,9 +13,6 @@ date: 2025-05-21
 
 Python documentation, continually under development…
 
-## Previous APL Python Slides:
-
-In the meantime, have a look at previous slides Introductory Python I which covers basic Python language features and Introductory Python II which covers some more advanced Python language features (modules, functions) and a
 
 ##Online Python Documentation & Tutorials
 

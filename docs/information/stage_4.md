@@ -16,7 +16,7 @@ date: 2026-08-19
 The Stage 4 Advanced Laboratory Introductory Talk will be given by Assoc. Prof. Luis Leon-Vintro at 2pm on Tuesday 8 
 September 2026 in room B000-BH (Beech Hill).
 
-Slides from the Introductory Lecture by Assoc. Prof. Vintro are available [here](/PDFs/Stage_4_Introduction_2627.pdf).
+Slides from the Introductory Lecture by Assoc. Prof. Vintro are available [here](../PDFs/Stage_4_Introduction_2627.pdf).
 
 - - -
 

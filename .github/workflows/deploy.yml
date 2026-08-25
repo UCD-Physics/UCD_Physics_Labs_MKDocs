@@ -1,0 +1,42 @@
+name: Deploy MkDocs site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main   # change to 'master' if that's your default branch
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # full history, needed if using git-revision-date plugins
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ hashFiles('.cache/**') }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+          pip install pymdown-extensions
+          pip install mkdocs-video
+          # Add any other plugins/extensions you use, e.g.:
+          # pip install mkdocs-git-revision-date-localized-plugin
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force

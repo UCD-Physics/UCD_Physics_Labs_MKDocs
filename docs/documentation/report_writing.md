@@ -15,13 +15,13 @@ A guide to writing laboratory reports.
 
 Guidelines for the preparation of reports in the Stage 3 and Stage 4 Advanced Laboratories 
 can be found here: 
-[ReportGuidelines.pdf](/PDFs/ReportWriting/ReportGuidelines2025.pdf)
+[ReportGuidelines.pdf](../PDFs/ReportWriting/ReportGuidelines2025.pdf)
 
 ## **Computational Lab. Reports**
 
-[Download Computational Lab Guidelines](/PDFs/ReportWriting/Computational_Lab_Guidelines.pdf)
+[Download Computational Lab Guidelines](../PDFs/ReportWriting/Computational_Lab_Guidelines.pdf)
 
-[Download Computational Lab AI Guidelines](/PDFs/ReportWriting/AI_Guidelines_Adv_Labs.pdf)
+[Download Computational Lab AI Guidelines](../PDFs/ReportWriting/AI_Guidelines_Adv_Labs.pdf)
 
 ## Plagiarism
 
@@ -39,7 +39,7 @@ Information on “Citing Information and Avoiding Plagiarism” is provided by t
 
 At the start of Stage 3 all students in the Advanced Laboratories are required to read and sign the UCD 
 School of Physics Advanced Laboratories 
-[Plagiarism Document](/PDFs/ReportWriting/UCD_Physics_Labs_Plagiarism_statement.pdf)
+[Plagiarism Document](../PDFs/ReportWriting/UCD_Physics_Labs_Plagiarism_statement.pdf)
 
 ### Additional Information
 

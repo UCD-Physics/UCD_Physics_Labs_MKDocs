@@ -25,7 +25,7 @@ There are different releases of Python 3 (e.g. 3.12) and it is recommened to use
 
 ### Conda-forge
 
-[![Conda Logo](/imgs/conda-forge.png)](https://conda-forge.org/)
+[![Conda Logo](../../imgs/conda-forge.png)](https://conda-forge.org/)
 
 The recommended way to install Python and associated packages such as [Scipy](https://www.scipy.org/), [Numpy](https://numpy.org/), 
 [Matplotlib](https://matplotlib.org/), [AstroPy](https://www.astropy.org/) etc. is from [Conda-forge](https://conda-forge.org/).
@@ -37,7 +37,7 @@ The Conda-forge installer is [miniforge](https://github.com/conda-forge/miniforg
 
 ### Anaconda Python distribution
 
-[![Anaconda Logo](/imgs/anaconda.png)](https://anaconda.org/)
+[![Anaconda Logo](../../imgs/anaconda.png)](https://anaconda.org/)
 
 Alternatively [Anaconda Python Distribution](https://anaconda.org/) can be installed. Note that this is from a commercial company which now requires an email 
 address to obtain the download link and the distribution includes many additional packages by Anaconda which require an Anaconda account to use.

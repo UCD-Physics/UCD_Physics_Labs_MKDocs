@@ -18,4 +18,4 @@ Liquid nitrogen is used in the Ramsaeur Towsend experiment as well as
 a few others. Every student undergoes safety training for handling
 liquid nitrogen.
 
-[LN2 Training Document](/PDFs/LN2_training_APL.pdf)
+[LN2 Training Document](../PDFs/LN2_training_APL.pdf)
