@@ -116,17 +116,12 @@ The hard deadlines for submission of laboratory reports are:
 	
 - - -
 
-## Late Submission of Laboratory Reports (to be updated with new UCD Policy for 2026-2027)
+## Late Submission of Laboratory Reports
 
-The [UCD Late Submission of Coursework](https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=GD-DOCLAND&ID=137) policy applies.
+Effective September 2026, UCD has introduced the **Additional Considerations for Assessment Policy**, for more information see: [here](https://www.ucd.ie/registry/projects/adcons/) and [here](https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=GD-DOCLAND&ID=301).
 
-In particular, from section 5:
+For the labs, year-long modules will have two permitted self-certified five-working-day extensions (each with an additional five-day one-grade penalty permitted). One-trimester modules there will have one permitted self-certified extension.
 
-5.1. Coursework submitted up to 10 working days past the due date will be graded but a grade penalty will be applied.
 
-5.1.1. Coursework submitted at any time up to and including 5 working days after the due date will have the grade awarded reduced by one grade point (for example, from B- to C+).
+However, in all cases, **you will not be assigned your next laboratory until the report for the previous one has been submitted**.
 
-5.1.2. Coursework submitted more than 5 working days but up to and including 10 working days after the due date will have the grade reduced by two grade points (for example, from B- to C).
-
-5.2. Coursework received more than 10 working days after the due date will not be accepted or graded.
-	
