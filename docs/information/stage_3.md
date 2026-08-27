@@ -18,11 +18,11 @@ Please note: some of the links to slides etc. are not all live yet and will be u
 | Topic | Presenter | Date | Time | Location | Slides |
 | ------------ | ------------- | ------------ | ------------ | ------------- | ------------ |
 | Welcome and Introduction to the Advanced Laboratories | Prof. John Quinn | Tuesday 8 September | 14:00-14:50 | B106-BH  | [Slides](../PDFs/Stage3_Lab_Intro_2627.pdf) |
-| Data Acquisition in Python | Prof. John Quinn | Wednesday 9 September | 14:00-14:50 | B106-BH | [Slides](../../PDFs/Stage3_DACQ_Python_2627.pdf) |
-| Report Writing | Dr. Tom McCormack  |Tuesday 15 September | 14:00-14:50 | B106-BH | [Example Manual](../../PDFs/ReportWriting/Manual.pdf),  [Example Report](../PDFs/ReportWriting/Example-Report.pdf),  [Report Guidelines](../../PDFs/ReportWriting/ReportGuidelines2025.pdf), [Plagiarism statement](../../PDFs/ReportWriting/UCD_Physics_Labs_Plagiarism_statement.pdf) |
-| Data Analysis 1 | Prof. John Quinn | Wednesday 16 September | 14:00-14:50 | B106-BH | [Slides](../../PDFs/DataAnalysis/Stage3_Data_Analysis_2627.pdf) |
-| Data analysis 2 | Prof. John Quinn  | Wednesday 23 September | 14:00-14:50 | B106-BH | [Slides](../../PDFs/DataAnalysis/Stage3_Data_Analysis_2627.pdf) |
-| Trimester 2 | Dr. Tom McCormack  | Wednesday 20 January | 14:00-14:50 | B106-BH | [Slides](../../PDFs/Stage3_Trimester_2_Intro_2627.pdf) |
+| Data Acquisition in Python | Prof. John Quinn | Wednesday 9 September | 14:00-14:50 | B106-BH | [Slides](../PDFs/Stage3_DACQ_Python_2627.pdf) |
+| Report Writing | Dr. Tom McCormack  |Tuesday 15 September | 14:00-14:50 | B106-BH | [Example Manual](../PDFs/ReportWriting/Manual.pdf),  [Example Report](../PDFs/ReportWriting/Example-Report.pdf),  [Report Guidelines](../PDFs/ReportWriting/ReportGuidelines2025.pdf), [Plagiarism statement](../PDFs/ReportWriting/UCD_Physics_Labs_Plagiarism_statement.pdf) |
+| Data Analysis 1 | Prof. John Quinn | Wednesday 16 September | 14:00-14:50 | B106-BH | [Slides](../PDFs/DataAnalysis/Stage3_Data_Analysis_2627.pdf) |
+| Data analysis 2 | Prof. John Quinn  | Wednesday 23 September | 14:00-14:50 | B106-BH | [Slides](../PDFs/DataAnalysis/Stage3_Data_Analysis_2627.pdf) |
+| Trimester 2 | Dr. Tom McCormack  | Wednesday 20 January | 14:00-14:50 | B106-BH | [Slides](../PDFs/Stage3_Trimester_2_Intro_2627.pdf) |
 
 - - -
 
