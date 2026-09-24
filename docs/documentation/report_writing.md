@@ -4,7 +4,7 @@ summary: Information on writing lab reports for the APL
 authors:
     - John Quinn
     - Joe Branson
-date: 2025-05-21
+date: 2026-09-24
 ---
 
 # Report Writing & Plagiarism
@@ -15,7 +15,7 @@ A guide to writing laboratory reports.
 
 Guidelines for the preparation of reports in the Stage 3 and Stage 4 Advanced Laboratories 
 can be found here: 
-[ReportGuidelines.pdf](../PDFs/ReportWriting/ReportGuidelines2025.pdf)
+[ReportGuidelines.pdf](../PDFs/ReportWriting/ReportGuidelines20260916.pdf)
 
 ## **Computational Lab. Reports**
 
