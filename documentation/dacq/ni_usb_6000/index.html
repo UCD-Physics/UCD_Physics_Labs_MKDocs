@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../../imgs/UCD_logo_transparency_favicon_small.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -1526,7 +1526,7 @@ The resolution and ranges are better in differential than in single-ended mode a
 <tbody>
 <tr>
 <td>ADC</td>
-<td>8 × 11-bit single-ended mode - range ±10 V <br> 4 × 12-bit differential mode - ranges: ± 20V<em> , ±10V, ±5 V, ±4 V, ±2.5 V, ±2 V, ±1.25 V, ±1 V. (</em> both AI+ and AI- must be within ±10V of ground). A built-in amplifier matches signal ADC range - specify in software</td>
+<td>8 × 11-bit single-ended mode - range ±10 V <br> 4 × 12-bit differential mode - ranges: ± 20V* , ±10V, ±5 V, ±4 V, ±2.5 V, ±2 V, ±1.25 V, ±1 V. (* both AI+ and AI- must be within ±10V of ground). A built-in amplifier matches signal ADC range - specify in software</td>
 </tr>
 <tr>
 <td>DAC</td>
@@ -1623,13 +1623,13 @@ or want to sample voltages from one or more channels. The first three steps are 
 <p>For options to ADC addChannels() see below.</p>
 <h4 id="adding-channels-options"><strong>Adding Channels &amp; Options</strong></h4>
 <p>The ADC method:</p>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">ADC</span><span class="o">.</span><span class="n">addChannels</span><span class="p">()</span>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="o">.</span><span class="n">addChannels</span><span class="p">()</span>
 </span></code></pre></div>
 <p>takes four arguments, three of which are optional and default to the values shown:</p>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">ADC</span><span class="o">.</span><span class="n">addChannels</span><span class="p">(</span><span class="n">newChannels</span><span class="p">,</span> 
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                <span class="n">ADC_mode</span><span class="o">=</span><span class="s2">"DAQmx_Val_Diff"</span><span class="p">,</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>                <span class="n">minRange</span><span class="o">=-</span><span class="mf">10.0</span><span class="p">,</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>                <span class="n">maxRange</span><span class="o">=</span><span class="mf">10.0</span> <span class="p">)</span>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="o">.</span><span class="n">addChannels</span><span class="p">(</span><span class="n">newChannels</span><span class="p">,</span> 
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>             <span class="n">ADC_mode</span><span class="o">=</span><span class="s2">"DAQmx_Val_Diff"</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>         <span class="n">minRange</span><span class="o">=-</span><span class="mf">10.0</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>         <span class="n">maxRange</span><span class="o">=</span><span class="mf">10.0</span> <span class="p">)</span>
 </span></code></pre></div>
 <ul>
 <li><code>'newChannels'</code> is a list of channel ids to be added</li>
@@ -1642,12 +1642,12 @@ or want to sample voltages from one or more channels. The first three steps are 
 make sure to specify the correct range!</p>
 </div>
 <p>Note: there is also an ADC method</p>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">ADC</span><span class="o">.</span><span class="n">getActiveChannels</span><span class="p">()</span>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a> <span class="o">.</span><span class="n">getActiveChannels</span><span class="p">()</span>
 </span></code></pre></div>
 <p>which returns a list of the channels that have been added.</p>
 <h4 id="to-read-out-a-single-voltage-from-a-single-channel"><strong>To read out a single voltage from a single channel</strong></h4>
 <p>To reaout the voltage once when only a single channel is connected use the ADC method:</p>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">ADC</span><span class="o">.</span><span class="n">readVoltage</span><span class="p">()</span>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">.</span><span class="n">readVoltage</span><span class="p">()</span>
 </span></code></pre></div>
 <p>which returns the voltage as a floating-point number.</p>
 <p>Here is a complete code snippet to read out and print the voltage on channel 0:</p>
@@ -1660,13 +1660,13 @@ make sure to specify the correct range!</p>
 </span></code></pre></div>
 <h4 id="to-read-out-multiple-channels-andor-samples"><strong>To read out multiple channels and/or samples</strong></h4>
 <p>If you want to read out more than one channel, or have the USB-6008 sample voltages at some sample 
-rate (i.e. automatically read the voltages at a specified rate) then you must use</p>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">samples</span> <span class="o">=</span> <span class="n">sampleVoltages</span><span class="p">(</span><span class="n">nPointsPerChannel</span><span class="p">,</span> <span class="n">sampleRate</span><span class="p">)</span>
+rate (i.e. automatically read the voltages at a specified rate) then you must use the ADC method:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="o">.</span><span class="n">sampleVoltages</span><span class="p">(</span><span class="n">nPointsPerChannel</span><span class="p">,</span> <span class="n">sampleRate</span><span class="p">)</span>
 </span></code></pre></div>
 <p>where the total number of samples per channel and the sample rate can be specificed 
 (both default to 1 if not given). Recall that the USB-6008 has a maximum sample rate of 10 kS/s 
 for all channels combined.</p>
-<p><code>ADC.sampleVoltages()</code> returns a dictionary where the keys are the channel ids and the values are the samples (as tuples):</p>
+<p><code>.sampleVoltages()</code> returns a dictionary where the keys are the channel ids and the values are the samples (as tuples):</p>
 <p><img alt="Sample Voltages Breakdown" src="../../../imgs/samplevoltages.png"></p>
 <p>Figure: dictionary returned by sampleVoltages</p>
 <p>Recall that the values are accessed using <code>dict[key]</code> and that tuples are immutable sequences.</p>
@@ -1810,10 +1810,10 @@ which returns a string representaiton of the binary numbers written out:</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       
