@@ -134,10 +134,10 @@ The ADC method:
 takes four arguments, three of which are optional and default to the values shown:
 
 ``` py
-.addChannels(newChannels, 
+.addChannels(newChannels,
              ADC_mode="DAQmx_Val_Diff",
-	     minRange=-10.0,
-	     maxRange=10.0 )
+             minRange=-10.0,
+             maxRange=10.0)
 ```
 
  - `'newChannels'` is a list of channel ids to be added
